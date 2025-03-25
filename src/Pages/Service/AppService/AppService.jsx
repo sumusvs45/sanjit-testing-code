@@ -9,51 +9,69 @@ import { FaCalendarCheck } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { SiAdguard } from "react-icons/si";
-
-import app_icon from "../../../assets/app development 1.webp";
+import app_hero from "../../../assets/app-hero.webp";
 import webbg from "../../../assets/web-service-bg.webp";
 import webbg_lt from "../../../assets/web-service-bg-lt.webp";
 import CTA_img from "../../../assets/CTA_Image.webp";
 import "../AppService/AppService.css";
 import AppProcess from "./AppProcess/AppProcess";
+import {useRef} from 'react'
+import {motion,useInView} from 'framer-motion'
 
-export default function WebService() {
+export default function AppService() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.3, once: false });
+  const headingVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+  };
+  const leftContentVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } },
+  };
   return (
     <div className="app_dev">
       <div className="app_dev_hero">
-        <div className="app_dev_hero_two">
-          <img src={app_icon}></img>
-        </div>
+        <motion.div className="app_dev_hero_two"   ref={ref} // Track this div
+          variants={leftContentVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}>
+          <img src={app_hero}></img>
+        </motion.div>
         <div className="app_dev_hero_one">
-          <h1 className="app_dev_hero_h1">
-          Custom Web Development Services for High-Performance Websites
-          </h1>
-          <p>
+          <motion.h1 initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}} className="app_dev_hero_h1">
+          Innovative App Development for Mobile & Web for Seamless User Experiences 
+          </motion.h1>
+          <motion.p  initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}}>
             Cutting-edge app development solutions designed to deliver seamless
             performance, exceptional user experience, and future-ready
             technology for mobile and web platforms.
-          </p>
-          <button type="submit">Let's Build</button>
+          </motion.p>
+          <motion.button  initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}} type="submit">Let's Build</motion.button>
         </div>
       </div>
-      <AppProcess/>
-      <div className="why_box">
-        <p className="sub-heading">Why Choose Our App Development Service</p>
+      <motion.div   variants={headingVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        ref={ref} className="why_box">
+        <p className="sub-heading">Why Choose Our  <span className="app-text-hightlight">App Development Service</span></p>
         <p className="sub-text"> Our App development Process</p>
-      </div>
-       {/* <AppProcess/> */}
-
+      </motion.div>
+      <motion.div initial={{ opacity: 0, y: -50 }} whileInView={{opacity:1,y:0}} transition={{duration:1.5,ease:'easeIn'}} className="div">
+      <AppProcess/>
+      </motion.div>
+      
       <div className="properties">Why Our App Development Stands Out</div>
       <div className="boxes">
-        <img className="webbg-1" src={webbg_lt} alt="image" />
+        <img className="appbg-1" src={webbg_lt} alt="image" />
         <div className="boxes1">
-          <div className="box-1">
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}} className="box-1">
             <div className="box-icon">
               <BiCodeBlock size={40} className="icon-code-block" />
             </div>
             <p>User-friendly applications with our custom app development</p>
-          </div>
-          <div className="box-2">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.0,ease:'easeOut'}} className="box-2">
             <div className="box-icon">
               <FaPeopleArrows size={40} className="icon-code-block" />
             </div>
@@ -61,8 +79,8 @@ export default function WebService() {
               User-Friendly Design. Making every interaction intuitive and
               impactful
             </p>
-          </div>
-          <div className="box-3">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.5,ease:'easeOut'}}className="box-3">
             <div className="box-icon">
               <FaLaptop size={40} className="icon-code-block" />
             </div>
@@ -70,18 +88,18 @@ export default function WebService() {
               Seamless, high-performance cross-platform and native app
               development
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="boxes2">
-          <div className="box-4">
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.0,ease:'easeOut'}} className="box-4">
             <div className="box-icon">
               <FaCalendarCheck size={40} className="icon-code-block" />
             </div>
             <p>
               Ongoing maintenance and updates to keep your app running smoothly
             </p>
-          </div>
-          <div className="box-5">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.5,ease:'easeOut'}} className="box-5">
             <div className="box-icon">
               <SlGraph size={40} className="icon-code-block" />
             </div>
@@ -89,8 +107,8 @@ export default function WebService() {
               Integrating cutting-edge tech for enhanced performance and
               scalability
             </p>
-          </div>
-          <div className="box-6">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:4.0,ease:'easeOut'}} className="box-6">
             <div className="box-icon">
               <MdOutlineSecurity size={40} className="icon-code-block" />
             </div>
@@ -98,13 +116,13 @@ export default function WebService() {
               Secure, efficient, high-performing solutions for a flawless user
               experience
             </p>
-          </div>
+          </motion.div>
         </div>
-        <img className="webbg-2" src={webbg} alt="image" />
+        <img className="appbg-2" src={webbg} alt="image" />
       </div>
       <div className="professional">
         <h1>Why a Professional App is Essential for Business Success</h1>
-        <div className="professinal-boxes">
+        <motion.div initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}} className="professinal-boxes">
           <div className="professional-box-one">
             <SiAdguard size={40} className="icon-code-block" />
 
@@ -119,10 +137,7 @@ export default function WebService() {
                   Your app allows users to access your services anytime,
                   anywhere.
                 </li>
-                <li>
-                  A sleek, professional app enhances credibility and market
-                  authority.
-                </li>
+                
               </ul>
             </div>
           </div>
@@ -137,10 +152,7 @@ export default function WebService() {
                 <li>
                   An intuitive UI ensures a smooth and enjoyable experience.
                 </li>
-                <li>
-                  Ensures compatibility across smartphones, tablets, and
-                  desktops.
-                </li>
+               
               </ul>
             </div>
           </div>
@@ -156,13 +168,11 @@ export default function WebService() {
                 <li>
                   Ensures higher visibility in app stores and search engines.
                 </li>
-                <li>
-                  Built to handle increasing users and business expansion.
-                </li>
+            
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="faq_container">
         <h4 className="faq">FAQ's</h4>
@@ -170,7 +180,8 @@ export default function WebService() {
         {/* Faq Component */}
         <AppFaq />
       </div>
-      <div className="service-contact">
+      
+      <motion.div inital={{scale:0}} whileInView={{scale:1.05}} transition={{duration:1.5,ease:'easeOut'}}  className="service-contact">
         <div className="service-contact-img">
           <img src={CTA_img} alt="Call to Action"></img>
         </div>
@@ -184,7 +195,7 @@ export default function WebService() {
           </p>
           <button>Get a Free Quote</button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,25 +1,36 @@
 import React from 'react';
 import '../Hero/Hero.css'
+import {motion} from 'framer-motion'
+import { UpdateFollower } from 'react-mouse-follower';
 const Hero = () => {
     return (
         <>
-         <div className="hero-section">
-         <h2 className='hero-heading'>Smart Solutions For a  <br></br> <span>Digital Solutions</span></h2> 
-         <div className="big-circle">
-         </div> 
-         <div className="sm-circle">
-         </div>
+        <UpdateFollower mouseOptions={{
+            backgroundColor:'white',
+            zIndex:999,
+            followSpeed:1.5,
+            scale:5,
+            mixBlendMode:'exclusion'
+        }}>
+        <div className="hero-section">
+         <motion.h2 initial={{opacity:0,y:-100}} animate={{opacity:1,y:0}} transition={{type:"spring",stiffness:100,damping:10,delay:0.8}}className='hero-heading'>Smart Solutions For a  <br></br> <span>Digital Solutions</span></motion.h2> 
+         <motion.div initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{type:"spring",stiffness:100,damping:10,delay:0.8}}className="big-circle">
+         </motion.div> 
+         <motion.div initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{type:"spring",stiffness:100,damping:10,delay:0.8}} className="sm-circle">
+         </motion.div>
          <div className="half-eclipse-ring">
 
          </div>
-         <div className="md-eclipse">
+         <motion.div initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{type:"spring",stiffness:100,damping:10,delay:0.8}} className="md-eclipse">
             
-         </div>
-         <div className="md-circle">
-         </div>
+         </motion.div>
+         <motion.div initial={{opacity:0,scale:0}} animate={{opacity:1,scale:1}} transition={{type:"spring",stiffness:100,damping:10,delay:0.8}} className="md-circle">
+         </motion.div>
          <div className="semi-circle">
          </div>
          </div>
+
+        </UpdateFollower>
            
         </>
     );

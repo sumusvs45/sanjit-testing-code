@@ -9,7 +9,7 @@
 .chooseUs-border
 {
     width:8%;
-    height:14px;
+    height:8px;
     background-color: #000;
   
 }
@@ -58,9 +58,23 @@
     border-radius: 120px 0 0 120px;
     position: absolute;
     top: 30px;
-    left: 0;
-    transform: rotate(180deg);
+    left: 0px;
+    transform: rotate(180deg); /* Applied separately */
+    animation: circleMove 3s ease-in-out infinite alternate;
 }
+
+@keyframes circleMove {
+    0% {
+        transform: rotate(180deg) translateY(-20px);
+    }
+    50% {
+        transform: rotate(180deg) translateY(20px);
+    }
+    100% {
+        transform: rotate(180deg) translateY(-20px);
+    }
+}
+
 
 .md-circleRight {
     height: 140px;
@@ -102,9 +116,39 @@
     .card-left .card-right h2
     {
         font-size: 22px;
+        line-height: 24px;
     }
     .card-left .card-right p
     {
-        font-size: 16px;
+        font-size: 14px !important;
+        line-height: 26px;
+        text-align: justify;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px)
+{
+   .whyChoose-header
+   {
+    margin-left: 50px;
+   }
+   
+   
+    .card-left {
+        width: 501px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin: 10px;
+        position: absolute;
+        top: 12px;
+        right:30px;
+    }
+
+    .card-right
+    {
+        width:501px;
+        padding: 40px 20px;
+        bottom: 28px;
+        left: 28px;
     }
 }

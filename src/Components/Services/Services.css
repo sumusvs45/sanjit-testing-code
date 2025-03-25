@@ -1,6 +1,6 @@
 :root {
-    --primary-text: 24px;
-    --secondary-text: 34px;
+    --primary-text: 14px;
+    --secondary-text: 24px;
     --bglinear-gradient: linear-gradient(to right, #00246B, #7FA3DC);
 }
 
@@ -15,15 +15,20 @@
 .sub-heading {
     font-size: var(--primary-text);
     font-weight: 200;
+    line-height:20px;
+    margin-bottom: 14px;
 }
 
 .sub-text {
-    font-size: var(--secondary-text);
+    font-size:28px !important;
     font-weight: 600;
-    line-height: 36px;
-    width: 40%;
-    margin-top: 10px;
-    margin-left: 90px;
+    line-height: 26px !important;
+    margin-bottom: -5px;
+    margin-top: 18px !important;
+}
+.text-highlight
+{
+   color: #7FA3DC !important;
 }
 
 .card-container {
@@ -115,14 +120,15 @@
 }
 
 .card h4 {
-    font-size: 21px;
+    font-size: 24px;
     font-weight: 700;
+    line-height:24px;
 }
 
 .card p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
-    line-height: 21px;
+    line-height: 22px;
     margin-top: 20px;
 }
 @media (min-width:600px) and (max-width:768px)

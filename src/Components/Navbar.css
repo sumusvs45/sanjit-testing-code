@@ -9,17 +9,19 @@
 .navbar {
     background-color: var(--background-color);
     display: flex;
+    width:100%;
+    height:12vh;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 48px;
+    padding: 8px 48px;
     color: var(--text-color);
-    position: relative;
-    z-index: 1000;
+    position: fixed;
+    z-index: 10;
 }
  
 /* Logo Styling */
 .logo {
-    width: 160px;
+    width: 140px;
     height: auto;
     transition: transform 0.3s 0.4s ease-in-out;
 }
@@ -32,23 +34,31 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 18px;
+    padding: 4px;
 }
  
 /* Hide Nav Links Initially */
 .nav-links {
     display: none;    /* Initially hidden */
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+
 }
  
 /* Show Menu When Toggled */
 .nav-links.show {
     display: flex;
-    padding: 15px 20px;
-    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
     z-index: 10;
-    animation: slideIn 0.5s 0.1s forwards ease-in-out;
+    backdrop-filter: blur(10px);
+    animation: slideIn 0.3s forwards ease;
+    list-style-type: none;
 }
  
 /* List Items */
@@ -57,11 +67,42 @@
     padding: 10px 15px;
     cursor: pointer;
     transition: color 0.3s;
+    list-style-type: none !important;
 }
  
 .nav-links li:hover {
     color: var(--hover-color);
 }
+/* Hide submenu initially */
+.submenu {
+    
+    display: none;
+    position: absolute;
+    background: white;
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.submenu li
+{
+    list-style-type:none !important;
+    text-decoration: none;
+}
+
+/* Show submenu when parent is clicked */
+.services-menu:hover .submenu,
+.services-menu:focus-within .submenu {
+
+    display: block;
+}
+
+/* Ensure submenu appears on top */
+.services-menu {
+    position: relative;
+    cursor: pointer;
+}
+
  
 /* Menu Icon */
 .icon {
@@ -79,7 +120,7 @@
 /* Animation for Smooth Menu Appearance */
 @keyframes slideIn {
     from {
-        transform: translateX(100%);  /* Start from right */
+        transform: translateX(20%);  /* Start from right */
     }
     to {
         transform: translateX(0);      /* Slide to its normal position */

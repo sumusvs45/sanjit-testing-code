@@ -10,47 +10,62 @@ import { IoPeopleSharp } from "react-icons/io5";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { SiAdguard } from "react-icons/si";
 
-import app_icon from "../../../assets/app development 1.webp";
+// import app_icon from "../../../assets/app development 1.webp";
 import webbg from "../../../assets/web-service-bg.webp";
 import webbg_lt from "../../../assets/web-service-bg-lt.webp";
 import CTA_img from "../../../assets/CTA_Image.webp";
 import "../DataScience/DataScience.css";
 import DsProcess from "./DsProcess/DsProcess";
+import {useRef} from 'react'
+import {motion,useInView} from 'framer-motion'
 
 export default function DataScience() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { amount: 0.3, once: false });
+    const headingVariants = {
+      hidden: { opacity: 0, y: -50 },
+      visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+    };
+    const leftContentVariants = {
+      hidden: { opacity: 0, x: -100 },
+      visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } },
+    };
   return (
     <div className="ds_dev">
       <div className="ds_dev_hero">
-        <div className="ds_dev_hero_two">
+        <motion.div ref={ref} // Track this div
+          variants={leftContentVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"} className="ds_dev_hero_two">
           <img src={app_icon}></img>
-        </div>
+        </motion.div>
         <div className="ds_dev_hero_one">
-          <h1 className="ds_dev_hero_h1">
+          <motion.h1 initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}} className="ds_dev_hero_h1">
           Data Science Solutions for Business Growth  
-          </h1>
-          <p>
+          </motion.h1>
+          <motion.p initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}}>
           Our Data Science expertise helps businesses make data-driven decisions for enhanced efficiency.
-          </p>
-          <button type="submit">Let's Build</button>
+          </motion.p>
+          <motion.button initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}} type="submit">Let's Build</motion.button>
         </div>
       </div>
-      <div className="ds-why_box">
+      <motion.div initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}} className="ds-why_box">
         <p className="ds-sub-heading">Why Choose Our  Data Science Development Service</p>
         <p className="ds-sub-text"> Our Data Science development Process</p>
-      </div>
+      </motion.div>
      <DsProcess/>
 
       <div className="ds-properties">Why Our Data Science Services Stand Out </div>
       <div className="ds-boxes">
         <img className="ds-webbg-1" src={webbg_lt} alt="image" />
         <div className="ds-boxes1">
-          <div className="ds-box-1">
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}} className="ds-box-1">
             <div className="ds-box-icon">
               <BiCodeBlock size={40} className="ds-icon-code-block" />
             </div>
             <p> Tailored data science strategies to meet your unique business needs.  </p>
-          </div>
-          <div className="ds-box-2">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.0,ease:'easeIn'}} className="ds-box-2">
             <div className="ds-box-icon">
               <FaPeopleArrows size={40} className="ds-icon-code-block" />
             </div>
@@ -58,8 +73,8 @@ export default function DataScience() {
             Implementing cutting-edge ML and AI models for predictive 
             insights and automation. 
             </p>
-          </div>
-          <div className="ds-box-3">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.5,ease:'easeIn'}}className="ds-box-3">
             <div className="ds-box-icon">
               <FaLaptop size={40} className="ds-icon-code-block" />
             </div>
@@ -67,10 +82,10 @@ export default function DataScience() {
               Seamless, high-performance cross-platform and native app
               development
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="ds-boxes2">
-          <div className="ds-box-4">
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.0,ease:'easeIn'}}className="ds-box-4">
             <div className="ds-box-icon">
               <FaCalendarCheck size={40} className="ds-icon-code-block" />
             </div>
@@ -78,16 +93,16 @@ export default function DataScience() {
             Leveraging big data technologies for faster and more accurate decision
             making.
             </p>
-          </div>
-          <div className="ds-box-5">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.5,ease:'easeIn'}}className="ds-box-5">
             <div className="ds-box-icon">
               <SlGraph size={40} className="ds-icon-code-block" />
             </div>
             <p>
             Ensuring data protection and adherence to industry regulations.
             </p>
-          </div>
-          <div className="ds-box-6">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:4.0,ease:'easeIn'}}className="ds-box-6">
             <div className="ds-box-icon">
               <MdOutlineSecurity size={40} className="ds-icon-code-block" />
             </div>
@@ -95,13 +110,13 @@ export default function DataScience() {
             Refining models and strategies for improved accuracy and 
             efficiency over time. 
             </p>
-          </div>
+          </motion.div>
         </div>
         <img className="ds-webbg-2" src={webbg} alt="image" />
       </div>
       <div className="ds-professional">
         <h1>Why Data Science is Essential for Your Business </h1>
-        <div className="ds-professinal-boxes">
+        <motion.div  initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}} className="ds-professinal-boxes">
           <div className="ds-professional-box-one">
             <SiAdguard size={40} className="ds-icon-code-block" />
 
@@ -148,7 +163,7 @@ export default function DataScience() {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="ds-faq_container">
         <h4 className="ds-faq">FAQ's</h4>
@@ -156,7 +171,7 @@ export default function DataScience() {
         {/* Faq Component */}
         <AppFaq />
       </div>
-      <div className="ds-service-contact">
+      <motion.div inital={{scale:0}} whileInView={{scale:1.05}} transition={{duration:1.5,ease:'easeOut'}} className="ds-service-contact">
         <div className="ds-service-contact-img">
           <img src={CTA_img} alt="Call to Action"></img>
         </div>
@@ -170,7 +185,7 @@ export default function DataScience() {
           </p>
           <button>Get a Free Quote</button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

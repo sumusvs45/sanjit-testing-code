@@ -1,0 +1,266 @@
+.aboutus-HeroSection{
+    position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height:fit-content;
+}
+.aboutus-Hero{
+    width: 100%;
+    display: block;
+}
+.aboutus
+{
+    position: relative;
+}
+ 
+.aboutus h1{
+    position: absolute;
+    bottom: 250px;
+    left:600px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.aboutus p{
+    position: absolute;
+    bottom:200px;
+    left:350px;
+    font-size:26px;
+    font-weight: 400;
+}
+.aboutus-content {
+
+    display: flex;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+
+   
+}
+.aboutus-content-img img{
+    width:350px;
+    height:auto;
+}
+.aboutus-content-matter{
+    margin-left: 50px;
+    margin-right:50px
+ 
+}
+.aboutus-content-matter h1{
+  font-size:32px;
+  line-height:20px;
+}
+.aboutus-content-matter p {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 20px 0px;
+}
+.aboutus-mission {
+    background-image: url('../../assets/missionbg.webp');
+    padding: 20px 40px;
+    margin:20px 0px;
+  
+}
+.about-mission h1{
+    margin-left: 75px;
+   font-size: 3vw;
+   font-weight:bold ;
+
+}
+.aboutus-boxes{
+    display:flex;
+     justify-content: center;
+     gap: 20px;
+     padding:20px 0;
+}
+.aboutus-box{
+    height: 250px;
+    width:280px;
+    color: #000;
+    border: 1px solid white;
+    border-top-right-radius:20%;
+    border-bottom-left-radius: 20%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 36px 10px;
+}
+.aboutus-box h2{
+    font-size: 26px;
+    line-height:20px;
+     margin-bottom: 20px;
+}
+.aboutus-box p{
+    
+    font-size:18px;
+    line-height: 26px;
+    text-align: left;
+    color:#000;
+}
+ 
+   
+   
+.aboutus-story{
+   
+    margin-left: 70px;
+    font-size: 3vw;
+   font-weight:bold ;
+   
+}
+.aboutus-Stories,.aboutus-story-1{
+    display: none;
+    justify-content: center;
+    gap:50px;
+    padding: 20px;
+    display: none;
+}
+.aboutus-box1{
+   
+background: linear-gradient(123.87deg, rgba(254, 249, 255, 0.7) -37.82%, rgba(170, 194, 232, 0.7) 106.22%);
+border-radius: 30px;
+height:420px;
+ width:380px;
+ padding: 20px;
+}
+.aboutus-box1 p{
+    font-size: 20px;
+    line-height:26px;
+    margin-bottom:18px;
+}
+.aboutus-box1 h3{
+    font-size: 25px;
+    line-height:20px;
+    margin-bottom: 20px;
+}
+.aboutus-ourstory{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding: 20px;
+    gap:40px;
+}
+.aboutus-ourstory-img img{
+    height:430px;
+    width:500px;
+}
+.aboutus-ourstory-content{
+    text-align: left;
+    font-size: 22px;
+    line-height:26px;
+}
+.aboutus-ourstory-content p{
+    text-align: left;
+    font-size: 18px;
+    line-height:26px;
+}
+
+@media (min-width:600px) and (max-width:768px)
+{
+   .aboutus-Hero{
+    height:65vh;
+   }
+   
+    .aboutus h1
+    {
+        bottom: 150px;
+        left: 300px;
+    }
+    .aboutus p
+    {
+        bottom: 123px;
+        left: 100px;
+    }
+    .aboutus-content
+    {
+        width: 90%;
+    }
+    .aboutus-content-matter
+    {
+        margin-top: 35px;
+    }
+    .aboutus-content-matter h1
+    {
+        font-size:24px;
+
+    }
+    .aboutus-content-matter p
+    {
+        font-size: 16px;
+    }
+
+    .aboutus-Stories,.aboutus-story
+    {
+           display: none;
+    }
+    .aboutus-box
+    {
+        padding: 20px 10px;
+        overflow: hidden;
+        
+    }
+    .aboutus-box h2
+    {
+        margin-bottom: 20px;
+       margin-left: 0;
+    }
+    .aboutus-ourstory-img img
+    {
+    height: 340px;
+    width: 340px;
+    }
+    .aboutus-ourstory-content
+    {
+        font-size: 16px;
+    }
+}
+@media (min-width:769px) and (max-width:1024px)
+{
+    .aboutus h1
+    {
+        bottom: 160px;
+        left: 318px;
+    }
+    .aboutus p
+    {
+        bottom: 123px;
+        left: 120px;
+    }
+    .aboutus-content
+    {
+        width:90%;
+        margin-top: -75px;
+    }
+    .aboutus-content-matter h1
+    {
+        font-size:28px;
+
+    }
+    .aboutus-content-matter p
+    {
+        font-size: 18px;
+    }
+    .aboutus-box
+    {
+        padding: 40px 10px;
+    }
+    .aboutus-box h2
+    {
+        margin-bottom: 20px;
+       margin-left: 0;
+    }
+    .aboutus-ourstory-img img
+    {
+    height: 354px;
+    width: 413px;
+    }
+    .aboutus-ourstory-content
+    {
+        font-size: 18px;
+    }
+}

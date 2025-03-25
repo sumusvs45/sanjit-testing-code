@@ -38,7 +38,6 @@
     padding: 15px;
     font-size: 18px;
     font-weight: 500;
-    background: none;
     border: none;
     outline: none;
     cursor: pointer;
@@ -49,6 +48,7 @@
     font-size: 22px;
     color: #333;
   }
+
   
   .faq-answer {
     padding: 15px;

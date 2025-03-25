@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiPlus, FiX } from "react-icons/fi";
-import "../Software/softwareProcess/SoftwareProcess.css"; // Import CSS file
+import "../Software/SoftwareFaq.css"; // Import CSS file
+import {motion} from 'framer-motion'
 
 const faqs = [
   {
@@ -39,21 +40,27 @@ export default function SoftwareFaq() {
   };
 
   return (
-    <div className="faq-container">
+    <div className="software-faq-container">
       {faqs.map((faq, index) => (
-        <div key={index} className="faq-box">
-          <button className="faq-question" onClick={() => toggleFAQ(index)}>
+        <motion.div initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+          delay: index * 0.2, // Staggered delay for rain effect
+        }}key={index} className="software-faq-box">
+          <button className="software-faq-question" onClick={() => toggleFAQ(index)}>
             {faq.question}
             {openIndex === index ? (
-              <FiX className="faq-icon" />
+              <FiX className="software-faq-icon" />
             ) : (
-              <FiPlus className="faq-icon" />
+              <FiPlus className="software-faq-icon" />
             )}
           </button>
           {openIndex === index && (
-            <div className="faq-answer">{faq.answer}</div>
+            <div className="software-faq-answer">{faq.answer}</div>
           )}
-        </div>
+        </motion.div>
       ))}
     </div>
   );

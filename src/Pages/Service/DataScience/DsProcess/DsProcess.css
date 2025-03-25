@@ -59,3 +59,34 @@
         margin-top: 20px;
   }
   
+  @media (min-width:600px) and (max-width:768px)
+  {
+    
+    .ds_dev_hero
+    {
+      height:100vh;
+    }
+    
+    
+    .ds-card-slider {
+      min-width: 100%;
+      padding: 26px;
+      background: linear-gradient(to left, #00246b, #7fa3dc);
+      color: white;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+  }
+  
+ .ds-card-slider-heading {
+  font-size: 26px;
+  margin: 30px 0;
+  line-height: 14px;
+}  
+.ds-card-slider-para
+{
+  font-size: 16px;
+  font-size: 18px;
+  line-height: 22px;
+}
+  }

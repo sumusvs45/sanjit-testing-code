@@ -1,42 +1,66 @@
-import React from 'react';
-import '../contactUs Page/ContactUsPage.css'
-import contact_img from '../../assets/contact.webp' 
+import React from "react";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaHeadphones } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import "../contactUs Page/ContactUsPage.css";
+import {useRef} from 'react'
+import {motion,useInView} from 'framer-motion'
 const ContactUsPage = () => {
-    return (
- <>
-<div className='contact_main'>
-<div className='contact_hero'>
-<div className='contact_hero_one'>
-<img src={contact_img} className='hero_png'></img>
-</div>
-<div className='contact_hero_two'><h1>Contact Us</h1></div>
-</div>
-<div className='contact_get_in_touch'>
-<div className='contact_get_in_touch_one'>
-<h1 className='contact_head'>Get In Touch</h1>
-<form className='contact_form'>
-<input type='text' placeholder='Name'></input><br></br>
-<input type='text' placeholder='Phone no'></input><br></br>
-<input  placeholder='email'></input><br></br>
-<textarea rows={10} cols={30} placeholder='Type your message'></textarea><br></br>
-<button type='submit'>Submit</button>
-</form>
-</div>
-<div className='contact_get_in_touch_two'>
-<h1>Contact Us</h1>
-</div>
-</div>
-<div className='google-map'>
-<div className='map'>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.039068687785!2d80.57401407496289!3d16.42284208430909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f1c17beee6fd%3A0x7b865927db48c898!2sSanjit%20Tech%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1742195136241!5m2!1sen!2sin" width="400" height="300" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</div>
-<div className='contact_footer'>
-</div>
-</div>
-            
- </>
-    );
-};
-
-export default ContactUsPage; 
+   const ref = useRef(null);
+    const isInView = useInView(ref, { amount: 0.3, once: false });
+    const headingVariants = {
+      hidden: { opacity: 0, y: -50 },
+      visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+    };
+   
+  return (
+    <div className="contact">
+      <div className="contact_hero">
+        <h1 
+         
+         >Let’s <span>Connect </span>& Collaborate</h1>
+        <motion.p initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}}>Partner with Us for Innovative Solutions</motion.p>
+      </div>
+      <div className="getin">
+        <p>GET IN TOUCH</p>
+      </div>
+      <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}} className="box1">
+        <motion.div className='box-icon' initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}}><FaMapMarkerAlt size={40} /></motion.div>
+        <h3>Office Location</h3>
+        <p>unit:307, 3rd floor, APNRT Tech Park, Mangalagiri, Atmakur Rural, Andhra Pradesh 522503</p>
+      </motion.div>
+      <motion.div className="box2"initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}} > 
+        <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}} className='box-icon'><FaHeadphones size={40} /></motion.div>
+        <h3>Communication</h3>
+        <div className='box2-icons'><FaPhoneAlt size={20} /></div>
+        <div className="box2-no"><p>8639620754</p></div>
+        <div className='box2-icons'><IoMail size={25} /></div>
+        <div className="box2-mail"><p>sanjittechsolutions@outlook.com</p></div>
+ 
+      </motion.div>
+      <motion.div className="form-section" variants={headingVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        ref={ref}>
+        <h2>Contact Us</h2>
+        <p>We’re here to answer your questions, discuss your ideas,
+          and help you bring your vision to life. Whether you’re looking for custom solutions, technical support, or just want to say hello – we’re just a message away</p>
+      </motion.div>
+ 
+      <motion.div className="contact-container" inital={{scale:0}} whileInView={{scale:1.05}} transition={{duration:1.5,ease:'easeOut'}}>
+        <h1>Let’s Build Something Great Together</h1>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Phone no" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Type Your Message" />
+          <button className="cta-btn" type="button">Submit</button>
+        </form>
+      </motion.div>
+ 
+    </div>
+ 
+  )
+}
+export default ContactUsPage;

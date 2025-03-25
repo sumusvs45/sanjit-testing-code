@@ -5,6 +5,7 @@ import WhyChoose from '../Components/WhyChoose/WhyChoose.jsx';
 import AboutUs from '../Components/About Us/AboutUs.jsx';
 import Review from '../Components/Review box/Review.jsx';
 import ContactUs from '../Components/Contact us/ContactUs.jsx';
+import WhyChooseFaq from '../Components/whyChooseFaq/WhyChooseFaq.jsx';
 const Home = () => {
     return (
         <>
@@ -13,7 +14,8 @@ const Home = () => {
         <WhyChoose/>
         <AboutUs/>
         <Review/>
-        <ContactUs/>
+        <WhyChooseFaq/>
+       <ContactUs/>
             
         </>
     );

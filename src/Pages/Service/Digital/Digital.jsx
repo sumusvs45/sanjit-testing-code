@@ -9,51 +9,71 @@ import { FaCalendarCheck } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { SiAdguard } from "react-icons/si";
-
-import app_icon from "../../../assets/app development 1.webp";
+import seo_hero from "../../../assets/seo.webp";
 import webbg from "../../../assets/web-service-bg.webp";
 import webbg_lt from "../../../assets/web-service-bg-lt.webp";
 import CTA_img from "../../../assets/CTA_Image.webp";
 import "../Digital/Digital.css";
 import DigitalProcess from "./DigitalProcess/DigitalProcess";
+import {useRef} from 'react'
+import {motion,useInView} from 'framer-motion'
 
 export default function Digital() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.3, once: false });
+  const headingVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+  };
+  const leftContentVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } },
+  };
   return (
     <div className="digital_dev">
       <div className="digital_dev_hero">
-        <div className="digital_dev_hero_two">
-          <img src={app_icon}></img>
-        </div>
+        <motion.div ref={ref} // Track this div
+          variants={leftContentVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"} className="digital_dev_hero_two">
+          <img src={seo_hero}></img>
+        </motion.div>
         <div className="digital_dev_hero_one">
-          <h1 className="digital_dev_hero_h1">
+          <motion.h1 initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}}  className="digital_dev_hero_h1">
           Result-Driven Digital Marketing Strategies for Business Growth 
-          </h1>
-          <p>
+          </motion.h1>
+          <motion.p initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}} >
           Our digital marketing solutions help brands grow by improving online visibility, generating leads, 
 and maximizing ROI. We implement the latest marketing techniques to drive targeted traffic and 
 customer engagement..
-          </p>
-          <button type="submit">Let's Build</button>
+          </motion.p>
+          <motion.button initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}} type="submit">Let's Build</motion.button>
         </div>
       </div>
-      <div className="digital_why_box">
+      <motion.div  variants={headingVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        ref={ref} className="digital_why_box">
         <p className="digital_sub-heading">Why Choose Our Digital Marketing Service</p>
         <p className="digital_sub-text"> Our Digital Marketing development Process</p>
-      </div>
+      </motion.div>
+      <div initial={{ opacity: 0, y: -50 }} whileInView={{opacity:1,y:0}} transition={{duration:1.5,ease:'easeIn'}} className="div">
       <DigitalProcess/>
+      </div>
+    
 
       <div className="digital-properties">Why Our SEO/Digital Marketing Services Stand Out</div>
-      <div className="digital-2boxes">
+      <div className="digital-boxes">
         <img className="digital-webbg-1" src={webbg_lt} alt="image" />
         <div className="digital-boxes1">
-          <div className="digital-box-1">
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}} className="digital-box-1">
             <div className="digital-box-icon">
               <BiCodeBlock size={40} className="digital-icon-code-block" />
             </div>
             <p>Tailored SEO plans based on your industry, target audience, and 
             business goals</p>
-          </div>
-          <div className="digital-box-2">
+          </motion.div>
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.0,ease:'easeOut'}} className="digital-box-2">
             <div className="digital-box-icon">
               <FaPeopleArrows size={40} className="digital-icon-code-block" />
             </div>
@@ -61,8 +81,8 @@ customer engagement..
             Ethical and sustainable SEO techniques that ensure long-term success and 
             avoid penalties. 
             </p>
-          </div>
-          <div className="digital-box-3">
+          </motion.div>
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.5,ease:'easeOut'}} className="digital-box-3">
             <div className="digital-box-icon">
               <FaLaptop size={40} className="digital-icon-code-block" />
             </div>
@@ -70,10 +90,10 @@ customer engagement..
             Enhancing page speed, mobile-friendliness, and structured data 
 for better rankings.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="digital-boxes2">
-          <div className="digital-box-4">
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.0,ease:'easeOut'}} className="digital-box-4">
             <div className="digital-box-icon">
               <FaCalendarCheck size={40} className="digital-icon-code-block" />
             </div>
@@ -81,8 +101,8 @@ for better rankings.
             Creating high-quality, engaging content that improves search rankings 
 and user engagement. 
             </p>
-          </div>
-          <div className="digital-box-5">
+          </motion.div>
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.5,ease:'easeOut'}} className="digital-box-5">
             <div className="digital-box-icon">
               <SlGraph size={40} className="digital-icon-code-block" />
             </div>
@@ -90,8 +110,8 @@ and user engagement.
             In-depth research to find the best opportunities 
             for ranking and outperforming competitors. 
             </p>
-          </div>
-          <div className="digital-box-6">
+          </motion.div>
+          <motion.div   initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:4.0,ease:'easeOut'}}className="digital-box-6">
             <div className="digital-box-icon">
               <MdOutlineSecurity size={40} className="digital-icon-code-block" />
             </div>
@@ -99,13 +119,13 @@ and user engagement.
             Continuous tracking, detailed reports, and strategy 
             adjustments to maximize results. 
             </p>
-          </div>
+          </motion.div>
         </div>
         <img className="digital-webbg-2" src={webbg} alt="image" />
       </div>
       <div className="digital-professional">
         <h1>Why SEO is Essential for Your Business </h1>
-        <div className="digital-professinal-boxes">
+        <motion.div  initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}} className="digital-professinal-boxes">
           <div className="digital-professional-box-one">
             <SiAdguard size={40} className="digital-icon-code-block" />
 
@@ -118,15 +138,13 @@ and user engagement.
                 <li>
                 Targeted Traffic – Attract the right audience through optimized keywords and content. 
                 </li>
-                <li>
-                Brand Recognition – Establish your brand as an industry leader with a strong online presence. 
-                </li>
+              
               </ul>
             </div>
           </div>
           <div className="digital-professional-box-two">
             <IoPeopleSharp size={40} className="digital-icon-code-block" />
-            <div className="professional-content">
+            <div className="digital-professional-content">
               <h2> Improves User Experience & Engagement </h2>
               <ul>
                 <li>
@@ -135,9 +153,7 @@ and user engagement.
                 <li>
                 Faster Load Times – Optimized websites perform better and keep users engaged.
                 </li>
-                <li>
-                Intuitive Site Structure – Easy navigation improves user experience and reduces bounce rates.
-                </li>
+                
               </ul>
             </div>
           </div>
@@ -152,13 +168,11 @@ and user engagement.
                 <li>
                 Better ROI Compared to Ads – Organic search brings long-term value without ongoing ad spend.
                 </li>
-                <li>
-                Scalability for Growth – SEO evolves with your business, ensuring continuous visibility..
-                </li>
+               
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="digital-faq_container">
         <h4 className="digital-faq">FAQ's</h4>
@@ -166,7 +180,7 @@ and user engagement.
         {/* Faq Component */}
         <DigitalFaq />
       </div>
-      <div className="digital-service-contact">
+      <motion.div  inital={{scale:0}} whileInView={{scale:1.05}} transition={{duration:1.5,ease:'easeOut'}} className="digital-service-contact">
         <div className="digital-service-contact-img">
           <img src={CTA_img} alt="Call to Action"></img>
         </div>
@@ -180,7 +194,7 @@ and user engagement.
           </p>
           <button>Get a Free Quote</button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

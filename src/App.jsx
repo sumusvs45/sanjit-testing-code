@@ -9,12 +9,24 @@ import Digital from "./Pages/Service/Digital/Digital.jsx";
 import DataScience from "./Pages/Service/DataScience/DataScience.jsx";
 import Ai from './Pages/Service/Artificial Intelligence/AI.jsx'
 import Software from "./Pages/Service/Software/Software.jsx";
-import ContactUs from "./Components/Contact us/ContactUs.jsx";
-import ContactUsPage from "./Pages/contactUs Page/ContactUsPage.jsx";
 
+
+import AboutUsPage from "./Pages/Aboutus/AboutUsPage.jsx";
+import ContactUsPage from "./Pages/contactUs Page/ContactUsPage.jsx";
+import { UpdateFollower } from 'react-mouse-follower';
+import ScrollToTop from "./Components/ScrollBar/ScrollToTop.jsx";
 function App() {
   return (
     <>
+     <UpdateFollower
+      mouseOptions={{
+        backgroundColor: 'black',
+        zIndex:2000,
+        followSpeed: 1.5,
+      }}>
+     <ScrollToTop/>
+     <Navbar />
+     </UpdateFollower>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,6 +37,7 @@ function App() {
         <Route path="/software" element={<Software/>}/>
         <Route path='/ai' element={<Ai/>}/>
         <Route path="/contact-us" element={<ContactUsPage/>}/>
+        <Route path="/about-us" element={<AboutUsPage/>}/>
       </Routes>
       <Footer />
     </>

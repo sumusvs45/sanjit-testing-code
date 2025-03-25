@@ -9,94 +9,116 @@ import { FaCalendarCheck } from "react-icons/fa";
 import { IoPeopleSharp } from "react-icons/io5";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { SiAdguard } from "react-icons/si";
-
-import app_icon from "../../../assets/app development 1.webp";
+// import app_icon from "../../../assets/app development 1.webp";
 import webbg from "../../../assets/web-service-bg.webp";
 import webbg_lt from "../../../assets/web-service-bg-lt.webp";
 import CTA_img from "../../../assets/CTA_Image.webp";
 import '../Software/Software.css'
 import SoftwareProcess from "../Software/softwareProcess/SoftwareProcess.jsx";
+import {useRef} from 'react'
+import {motion,useInView} from 'framer-motion'
+
 
 
 export default function Software() {
+   const ref = useRef(null);
+    const isInView = useInView(ref, { amount: 0.3, once: false });
+    const headingVariants = {
+      hidden: { opacity: 0, y: -50 },
+      visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+    };
+    const leftContentVariants = {
+      hidden: { opacity: 0, x: -100 },
+      visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } },
+    };
+  
   return (
     <div className="software-dev">
       <div className="software-dev_hero">
-        <div className="software-dev_hero_two">
+        <motion.div  ref={ref} // Track this div
+          variants={leftContentVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"} className="software-dev_hero_two">
           <img src={app_icon}></img>
-        </div>
+        </motion.div>
         <div className="software-dev_hero_one">
-          <h1 className="software-dev_hero_h1">
+          <motion.h1 initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}} className="software-dev_hero_h1">
           Unlock the Power of Software Development with Sanjit Tech Solutions
 
-          </h1>
-          <p>
+          </motion.h1>
+          <motion.p  initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}}>
           We build custom software solutions tailored to your business needs, helping you streamline operations, enhance customer experiences, and drive digital transformation
-          </p>
-          <button type="submit">Let's Build</button>
+          </motion.p>
+          <motion.button  initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:2.0 ,ease:'easeInOut'}} type="submit">Let's Build</motion.button>
         </div>
       </div>
-      <div className="software-why_box">
+      <motion.div  variants={headingVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        ref={ref} className="why_box">
         <p className="software-sub-heading">Why Choose Our Software Service</p>
         <p className="software-sub-text"> Our Software  development Process</p>
-      </div>
+      </motion.div>
+      <motion.div initial={{ opacity: 0, y: -50 }} whileInView={{opacity:1,y:0}} transition={{duration:1.5,ease:'easeIn'}} className="div">
       <SoftwareProcess/>
+      </motion.div>
+     
 
       <div className="software-properties">Why Our Software Services Stand Out</div>
       <div className="software-boxes">
         <img className="software-webbg-1" src={webbg_lt} alt="image" />
         <div className="software-boxes1">
-          <div className="software-box-1">
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:1.5,ease:'easeOut'}} className="software-box-1">
             <div className="software-box-icon">
               <BiCodeBlock size={40} className="software-icon-code-block" />
             </div>
             <p>Custom-built solutions designed to fit your specific business</p>
-          </div>
-          <div className="software-box-2">
+          </motion.div>
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.0,ease:'easeOut'}}className="software-box-2">
             <div className="software-box-icon">
               <FaPeopleArrows size={40} className="software-icon-code-block" />
             </div>
             <p>
             We utilize the latest programming languages, frameworks, and tools.
             </p>
-          </div>
-          <div className="software-box-3">
+          </motion.div>
+          <motion.div initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:2.5,ease:'easeOut'}}className="software-box-3">
             <div className="software-box-icon">
               <FaLaptop size={40} className="software-icon-code-block" />
             </div>
             <p>Our software evolves with your business growth.</p>
-          </div>
+          </motion.div>
         </div>
         <div className="software-boxes2">
-          <div className="software-box-4">
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.0,ease:'easeOut'}} className="software-box-4">
             <div className="software-box-icon">
               <FaCalendarCheck size={40} className="software-icon-code-block" />
             </div>
             <p>Ensuring smooth connectivity across platforms. 
             </p>
-          </div>
-          <div className="software-box-5">
+          </motion.div>
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:3.5,ease:'easeOut'}} className="software-box-5">
             <div className="software-box-icon">
               <SlGraph size={40} className="software-icon-code-block" />
             </div>
             <p>
             We adhere to industry standards to protect your data
             </p>
-          </div>
-          <div className="software-box-6">
+          </motion.div>
+          <motion.div  initial={{opacity:0,x:20}} whileInView={{opacity:1,x:0}} transition={{duration:4.0,ease:'easeOut'}} className="software-box-6">
             <div className="software-box-icon">
               <MdOutlineSecurity size={40} className="software-icon-code-block" />
             </div>
             <p>
             Regular updates and improvements for long-term performance.
             </p>
-          </div>
+          </motion.div>
         </div>
         <img className="software-webbg-2" src={webbg} alt="image" />
       </div>
       <div className="software-professional">
         <h1>Why  Software Development is Essential for Your Business </h1>
-        <div className="software-professinal-boxes">
+        <motion.div  initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}}  className="software-professinal-boxes">
           <div className="software-professional-box-one">
             <SiAdguard size={40} className="software-icon-code-block" />
 
@@ -149,7 +171,7 @@ export default function Software() {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="software-faq_container">
         <h4 className="software-faq">FAQ's</h4>
@@ -157,7 +179,7 @@ export default function Software() {
         {/* Faq Component */}
         <SoftwareFaq/>
       </div>
-      <div className="software-service-contact">
+      <motion.div nital={{scale:0}} whileInView={{scale:1.05}} transition={{duration:1.5,ease:'easeOut'}} className="software-service-contact">
         <div className="software-service-contact-img">
           <img src={CTA_img} alt="Call to Action"></img>
         </div>
@@ -171,7 +193,7 @@ export default function Software() {
           </p>
           <button>Get a Free Quote</button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

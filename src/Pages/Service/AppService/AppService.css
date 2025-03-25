@@ -1,6 +1,6 @@
 :root {
-  --primary-text: 24px;
-  --secondary-text: 40px;
+  --primary-text: 14px;
+  --secondary-text: 24px;
   --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
 }
 /* CSS Reset */
@@ -21,7 +21,7 @@
   grid-template-columns: 1fr 1fr; /* Two equal columns */
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 90vh;
   width: 100%;
   padding: 20px;
   gap: 50px;
@@ -102,72 +102,32 @@
 }
 
 .sub-heading {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 200;
-  width: 100%;
+  line-height:20px;
   text-align: center;
   /* margin-left: 870px; */
 }
 .sub-text {
-  font-size: var(--secondary-text);
+  font-size:28px;
   font-weight: 600;
   line-height: 36px;
-  width: 90%;
   text-align: center;
   /* margin-left: 770px; */
+}
+.app-text-highlight
+{
+   color: #7FA3DC !important;
 }
 .sevice {
   font-size: 30px;
   text-align: center;
 }
-.process_one {
-  display: flex;
-  justify-content: center;
-}
-.process1,
-.process2,
-.process3,
-.process4,
-.process5 {
-  font-size: 30px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin: 30px 50px;
-  border: 2px solid white;
-  padding: 20px;
-  /* margin-bottom: 25px; */
-}
-.process {
+
+
+.boxes {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    101.57deg,
-    rgba(0, 50, 148, 0.6) 8.46%,
-    rgba(0, 60, 179, 0.75) 126.96%
-  );
-  box-shadow: inset 3px 2px 24.8px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 10px;
-}
-.process_two {
-  margin-bottom: 15px;
-  width: 70%;
-  height: 30vh;
-  background-color: #fff;
-  color: #000;
-  padding: 20px 20px;
-  border-radius: 14px;
-}
-.process_two h2 {
-  margin-bottom: 1rem;
-}
-.process_two p {
-  color: rgba(0, 0, 0, 0.75);
-  font-size: 18px;
-}
-.boxes {
   position: relative;
 }
 
@@ -178,7 +138,7 @@
 .box-5,
 .box-6 {
   height: 235px;
-  width: 200px;
+  width: 240px;
   background-color: #fff;
   border-radius: 0px 30px 0px 30px;
   background: linear-gradient(
@@ -189,15 +149,17 @@
     #6081c0 67.99%,
     #7fa3dc 123.52%
   );
+  padding: 0px 20px;
 }
 .boxes1,
 .boxes2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin: auto;
   padding: 20px;
-  margin-left: 200px;
-  width: 70%;
+  gap:20px;
+  width: 90%;
 }
 .properties {
   text-align: center;
@@ -219,9 +181,9 @@
 
 .boxes p {
   color: white;
-  margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px;
+  line-height:24px;
 }
 
 .professional-box-one, .professional-box-two, .professional-box-three .icon-code-block{
@@ -263,7 +225,7 @@ ul li {
   margin-bottom: 5px;
 }
 .service-contact {
-  width: 95%;
+  width: 90%;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -271,8 +233,6 @@ ul li {
   background: linear-gradient(123.87deg, rgba(254, 249, 255, 0.7) -37.82%, rgba(170, 194, 232, 0.7) 106.22%);
   box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 0px 30px;
-
- 
   padding: 40px 20px;
   margin: 40px auto;
 }
@@ -310,7 +270,7 @@ ul li {
   font-weight: 750;
   margin-top: 50px;
 }
-.webbg-1 {
+.appbg-1 {
   height: 520px;
   width: 140px;
   position: absolute;
@@ -319,7 +279,7 @@ ul li {
   opacity: 0.7;
 }
 
-.webbg-2 {
+.appbg-2 {
   height: 520px;
   width: 140px;
   position: absolute;
@@ -332,69 +292,6 @@ ul li {
 
 /* ========== FAQ's =============== */
 
-
-.faq_container {
-  text-align: center;
-}
-
-.faq {
-  margin-top: 20px;
-  font-size: 18px; /* Adjust size as needed */
-  font-weight: 600;
-  color: #333;
-}
-
-.faq_container h2 {
-  text-decoration: underline;
-  font-size: 28px;
-  font-weight: 700;
-  color: #222;
-  margin-top: 10px;
-}
-
-.faq-container {
-  max-width: 900px;
-  margin: 20px auto;
-}
-
-.faq-box {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius:25px ;
-  margin-bottom: 10px;
-  background: linear-gradient(271.7deg, rgba(170, 194, 232, 0.7) 2.71%, rgba(0, 36, 107, 0.7) 99.72%);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.faq-question {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: 500;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.faq-icon {
-  font-size: 22px;
-  color: #333;
-}
-
-.faq-answer {
-  padding: 15px;
-  font-size: 16px;
-  color: #555;
-  border-top: 1px solid #ddd;
-  background: #fff;
-}
 @media (min-width:600px) and (max-width:768px)
 {
   .app_dev_hero_two img {
@@ -418,27 +315,36 @@ ul li {
   cursor: pointer;
   /* padding: 20px; */
 }
-.properties
+.app_properties
 {
   font-size: 32px;
 }
-.webbg-1 {
+.app_webbg-1 {
   height: 484px;
   width: 100px;
   position: absolute;
   top: 0;
-  left: 10px;
+  left: -30px;
   opacity: 1;
 
 }
-.boxes1, .boxes2 {
+.app_webbg-2
+{
+  right: 10px;
+}
+.app_boxes1, .app_boxes2 {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   padding: 20px;
-  margin-left: 81px;
+  margin-left:59px;
   width: 80%;
   gap:20px
+}
+.app_box_txt {
+  font-size: 14px;
+  margin-top: -20px;
+  text-align: center;
 }
 
 .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
@@ -451,30 +357,58 @@ ul li {
 }
 .boxes p {
   color: white;
-  margin-top: 20px;
-  font-size: 15px;
-  /* padding: 15px; */
+  margin-top:2px;
+  font-size: 16px;
   text-align: left;
+}
+.professional-box-one, .professional-box-two, .professional-box-three {
+  height: 433px;
+  width: 300px;
+  padding: 30px;
+  background: linear-gradient(to left, #00246b, #7fa3dc);
+  border-radius: 0px 30px 0px 30px;
+}
+.professional-content {
+  color: #ffffff;
+  margin-top: 8px;
+}
+.professional h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 24px;
 }
 .service-contact-img img {
   margin-left: 40px;
   width: 234px;
   height: 240px;
 }
+.service-contact-content
+{
+  padding: 0;
+}
 .service-contact-content h1 {
   font-size: 25px;
 
 }
-.process_one {
-  display: flex;
 }
-.process1, .process2, .process3, .process4, .process5 {
-  font-size: 30px;
-  background-color: #fff;
-  border-radius: 50%;
-  /* margin: 30px 50px; */
-  border: 2px solid white;
-  /* margin-bottom: 25px; */
-  padding: 4px;
-}
+
+@media (min-width:769px) and (max-width:1024px)
+{
+  .box-1, .box-2, .box-3, .box-4, .box-5, .box-6
+  {
+      height: 266px;
+      width: 200px;
+      background-color: #fff;
+      border-radius: 0px 30px 0px 30px;
+      background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+      
+  }
+  .web_app_service-contact
+  {
+    padding: 0;
+  }
+  .appbg-1,.appbg-2
+  {
+    display: none;
+  }
 }

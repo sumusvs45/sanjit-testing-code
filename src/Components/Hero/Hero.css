@@ -7,7 +7,7 @@
 .hero-section
 {
 
-    height:80vh;
+    height:100vh;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -77,7 +77,7 @@
     background: linear-gradient(to right#7FA3DC,#00246B);
     position: absolute;
     left:-100px;
-    top:40px;
+    top:80px;
     transform: rotate(180deg);
 }
 
@@ -88,11 +88,17 @@
     background: linear-gradient(to left, #FEF9FF, #AAC2E8);
     border-radius:50%;
     position: absolute;
-    top: 90px;
+    top: 130px;
     left: -40px;
     transform: rotate(180deg);
 }
+/* //Potrait landscape  */
+@media (min-width:428px) and (max-width:599px)
+{
 
+}
+
+/* //landscape */
 @media (min-width:600px) and (max-width:768px)
 {
     .hero-section
@@ -116,5 +122,62 @@
     {
         bottom: 79px;
         right: 108px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px)
+{
+    .hero-heading {
+        width: 100%;
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 140px;
+        margin-left: 140px;
+        line-height: 50px;
+    }
+    .big-circle {
+        width: 417px;
+        height: 441px;
+        background: linear-gradient(to right, #0a2c6c, #4667ad);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 22px;
+        right: -180px;
+        transform: rotate(270deg);
+    }
+    .md-circle
+    {
+        right: 157px;
+    }
+    .half-eclipse-ring {
+        width: 200px;
+        height: 200px;
+        border: 20px solid rgba(70, 103, 173, 0.8);
+        border-radius: 50%;
+        clip-path: inset(0 50% 0 0);
+        background: linear-gradient(to right #7FA3DC, #00246B);
+        position: absolute;
+        left: -100px;
+        top: 97px;
+        transform: rotate(180deg);
+    }
+    .md-eclipse
+    {
+        top: 148px;
+
+    }
+}
+@media (min-width:769px) and (max-width:1024px)
+{
+    .app_dev_hero h1
+    {
+        font-size:26px;
+        line-height:28px;
+    }
+    .app_dev_hero_one p {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 33px;
+        line-height: 22px;
     }
 }

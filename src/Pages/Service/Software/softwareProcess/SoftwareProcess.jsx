@@ -6,8 +6,7 @@ const cards = [
   { id: 1, text: "1. Strategy & Consultation", para: "We analyze your business requirements and craft a custom software strategy that aligns with your goals." },
   { id: 2, text: "2. Custom Software Development", para: "We design and develop scalable, high-performance software applications that cater to your unique business needs." },
   { id: 3, text: "3. UI/UX Design & Prototyping", para: "We craft intuitive and engaging user experiences to maximize usability and customer satisfaction." },
-  { id: 4, text: "4. We implement rigorous testing methodologies to ensure a bug-free and high-performing application." },
-  { id: 5, text: "5. Deployment & Integration", para: "We ensure smooth software deployment with minimal downtime and seamless integration into your existing ecosystem." },
+  { id: 4, text: "4. Deployment & Integration", para: "We ensure smooth software deployment with minimal downtime and seamless integration into your existing ecosystem." },
  
 ];
 

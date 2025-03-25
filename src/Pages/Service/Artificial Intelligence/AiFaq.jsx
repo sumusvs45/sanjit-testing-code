@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FiPlus, FiX } from "react-icons/fi";
 import "../Artificial Intelligence/AIFaq.css"; // Import CSS file
-
+import {motion} from 'framer-motion'
 const faqs = [
   {
     question: "What AI solutions do you offer?? ",
@@ -39,21 +39,27 @@ export default function AppFaq() {
   };
 
   return (
-    <div className="faq-container">
+    <div className="ai-faq-container">
       {faqs.map((faq, index) => (
-        <div key={index} className="faq-box">
-          <button className="faq-question" onClick={() => toggleFAQ(index)}>
+        <motion.div initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+          delay: index * 0.2, // Staggered delay for rain effect
+        }} key={index} className="ai-faq-box">
+          <button className="ai-faq-question" onClick={() => toggleFAQ(index)}>
             {faq.question}
             {openIndex === index ? (
-              <FiX className="faq-icon" />
+              <FiX className="ai-faq-icon" />
             ) : (
-              <FiPlus className="faq-icon" />
+              <FiPlus className="ai-faq-icon" />
             )}
           </button>
           {openIndex === index && (
-            <div className="faq-answer">{faq.answer}</div>
+            <div className="ai-faq-answer">{faq.answer}</div>
           )}
-        </div>
+        </motion.div>
       ))}
     </div>
   );

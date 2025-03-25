@@ -14,21 +14,23 @@ export default function CardSlider() {
   const [scrollX, setScrollX] = useState(0);
 
   useEffect(() => {
-     const scrollContainer = containerRef.current;
-     if (!scrollContainer) return;
- 
-     const scrollSpeed = 2; // Adjust speed here
-     const interval = setInterval(() => {
-       if (scrollContainer.scrollLeft < scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-         scrollContainer.scrollLeft += scrollSpeed;
-       } else {
-         scrollContainer.scrollLeft = 0; // Reset scroll when it reaches the end
-       }
-       handleScroll();
-     }, 50); // Adjust interval for smoothness
- 
-     return () => clearInterval(interval);
-   }, []);
+    const scrollContainer = containerRef.current;
+    if (!scrollContainer) return;
+  
+    const scrollSpeed = 2; // Adjust speed here
+  
+    const interval = setInterval(() => {
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollContainer.scrollLeft = 0; // Instantly restart from beginning
+      } else {
+        scrollContainer.scrollLeft += scrollSpeed;
+      }
+      handleScroll();
+    }, 50); // Adjust interval for smoothness
+  
+    return () => clearInterval(interval);
+  }, []);
+  
  
    const handleScroll = () => {
      if (containerRef.current) {

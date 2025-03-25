@@ -1,15 +1,15 @@
 
-.faq_container {
+.ds-faq_container {
     text-align: center;
   }
   
-  .faq {
+  .ds-faq {
     font-size: 24px; /* Adjust size as needed */
     font-weight: 600;
     color: #333;
   }
   
-  .faq_container h2 {
+  .ds-faq_container h2 {
     font-size: 28px;
     font-weight: 700;
     color: #222;
@@ -17,41 +17,42 @@
   }
   
 
-.faq-container {
+.ds-faq-container {
     max-width: 600px;
     margin: 20px auto;
   }
   
-  .faq-box {
+  .ds-faq-box {
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 10px;
-    background: #f9f9f9;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
   
-  .faq-question {
+  .ds-faq-question {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     font-size: 18px;
+    line-height:18px;
     font-weight: 500;
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
-    color: #333;
+    color: #fff;
   }
   
-  .faq-icon {
+  .ds-faq-icon {
     font-size: 22px;
-    color: #333;
+    color: #fff;
   }
   
-  .faq-answer {
+  .ds-faq-answer {
     padding: 15px;
     font-size: 16px;
     color: #555;
