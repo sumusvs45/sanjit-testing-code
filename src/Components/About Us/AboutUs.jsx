@@ -15,13 +15,13 @@ const AboutUs = () => {
 
   // Left content animation
   const leftContentVariants = {
-    hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0, x: 10},
     visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } },
   };
 
   // Right images animation
   const rightImageVariants = {
-    hidden: { opacity: 0, x: 100 },
+    hidden: { opacity: 0, x: 10 },
     visible: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } },
   };
 

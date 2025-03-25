@@ -290,7 +290,487 @@ ul li {
 
 
 
-/* ========== FAQ's =============== */
+
+/* =====================================================================
+              Responsiveness 
+========================================================================== */
+
+@media screen and (max-width: 375px) {
+  .app_dev_hero {
+      display: flex;
+      flex-direction: column; /* Stack elements for better mobile UX */
+      height: auto;
+      gap: 30px;
+      padding: 40px 15px;
+      text-align: center;
+  }
+
+  .app_dev_hero_one {
+      align-items: center; /* Center text for mobile */
+      text-align: center;
+      width: 100%;
+  }
+
+  .app_dev_hero_h1 {
+      font-size: 24px; /* Reduce font size for smaller screens */
+      margin-bottom: 20px;
+  }
+
+  .app_dev_hero_one p {
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+
+  .app_dev_hero_two img {
+      height: 250px; /* Reduce image size for better fit */
+      width: auto;
+  }
+
+  .app_dev_hero_one button {
+      width: 100%;
+      max-width: 200px; /* Keep button width manageable */
+      height: 45px;
+      font-size: 1rem;
+      border-radius: 10px;
+  }
+
+  .why_box {
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.sub-text {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.sevice {
+    font-size: 24px;
+}
+
+.boxes {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes1,
+.boxes2 {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6 {
+    width: 100%;
+    max-width: 280px; /* Limit width for better fit */
+    height: auto;
+    padding: 15px;
+}
+
+.properties {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.box-icon .icon-code-block {
+    height: 30px;
+    width: 30px;
+}
+
+.boxes p {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 22px;
+}
+
+.professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.professional-box-one,
+.professional-box-two,
+.professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+
+.professional h1 {
+    font-size: 24px;
+}
+
+.service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-contact-content {
+    align-items: center;
+    padding: 10px;
+}
+
+.service-contact-img img {
+    margin-left: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.service-contact-content h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service-contact-content p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.service-contact-content button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.appbg-1,
+.appbg-2 {
+    display: none; /* Hide background images to reduce clutter */
+}
+
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .app_dev_hero {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      gap: 35px;
+      padding: 50px 20px;
+      text-align: center;
+  }
+
+  .app_dev_hero_one {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+  }
+
+  .app_dev_hero_h1 {
+      font-size: 26px;
+      margin-bottom: 25px;
+  }
+
+  .app_dev_hero_one p {
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+
+  .app_dev_hero_two img {
+      height: 280px;
+      width: auto;
+  }
+
+  .app_dev_hero_one button {
+      width: 100%;
+      max-width: 220px;
+      height: 50px;
+      font-size: 1.1rem;
+      border-radius: 12px;
+  }
+
+  .why_box {
+      margin: 25px auto;
+      padding: 0 20px;
+  }
+
+  .sub-heading {
+      font-size: 22px;
+      line-height: 20px;
+  }
+
+  .sub-text {
+      font-size: 24px;
+      line-height: 30px;
+  }
+
+  .sevice {
+      font-size: 26px;
+  }
+
+  .boxes {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .boxes1,
+  .boxes2 {
+      flex-direction: column;
+      gap: 18px;
+      padding: 15px;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      padding: 18px;
+  }
+
+  .properties {
+      font-size: 26px;
+      margin-top: 25px;
+  }
+
+  .box-icon .icon-code-block {
+      height: 35px;
+      width: 35px;
+  }
+
+  .boxes p {
+      font-size: 17px;
+      padding: 12px;
+      line-height: 24px;
+  }
+
+  .professinal-boxes {
+      flex-direction: column;
+      align-items: center;
+      padding: 18px;
+  }
+
+  .professional-box-one,
+  .professional-box-two,
+  .professional-box-three {
+      width: 85%;
+      height: auto;
+      padding: 25px;
+  }
+
+  .professional h1 {
+      font-size: 26px;
+  }
+
+  .service-contact {
+      flex-direction: column;
+      text-align: center;
+      padding: 25px;
+  }
+
+  .service-contact-content {
+      align-items: center;
+      padding: 15px;
+  }
+
+  .service-contact-img img {
+      margin-left: 0;
+      width: 220px;
+      height: 220px;
+  }
+
+  .service-contact-content h1 {
+      font-size: 26px;
+      margin: 12px 0;
+      text-align: center;
+  }
+
+  .service-contact-content p {
+      font-size: 17px;
+      margin: 12px 0;
+  }
+
+  .service-contact-content button {
+      width: 100%;
+      max-width: 220px;
+      font-size: 19px;
+      margin-top: 35px;
+  }
+
+  .appbg-1,
+  .appbg-2 {
+      display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 376px) and (max-width: 599px) {
+  .app_dev_hero {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      gap: 40px;
+      padding: 60px 25px;
+      text-align: center;
+  }
+
+  .app_dev_hero_one {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+  }
+
+  .app_dev_hero_h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+  }
+
+  .app_dev_hero_one p {
+      font-size: 19px;
+      margin-bottom: 22px;
+  }
+
+  .app_dev_hero_two img {
+      height: 300px;
+      width: auto;
+  }
+
+  .app_dev_hero_one button {
+      width: 100%;
+      max-width: 240px;
+      height: 55px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+  }
+
+  .why_box {
+      margin: 30px auto;
+      padding: 0 25px;
+  }
+
+  .sub-heading {
+      font-size: 24px;
+      line-height: 22px;
+  }
+
+  .sub-text {
+      font-size: 26px;
+      line-height: 32px;
+  }
+
+  .sevice {
+      font-size: 28px;
+  }
+
+  .boxes {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .boxes1,
+  .boxes2 {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      padding: 20px;
+  }
+
+  .properties {
+      font-size: 28px;
+      margin-top: 30px;
+  }
+
+  .box-icon .icon-code-block {
+      height: 38px;
+      width: 38px;
+  }
+
+  .boxes p {
+      font-size: 18px;
+      padding: 14px;
+      line-height: 26px;
+  }
+
+  .professinal-boxes {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .professional-box-one,
+  .professional-box-two,
+  .professional-box-three {
+      width: 80%;
+      height: auto;
+      padding: 30px;
+  }
+
+  .professional h1 {
+      font-size: 28px;
+  }
+
+  .service-contact {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+  }
+
+  .service-contact-content {
+      align-items: center;
+      padding: 15px;
+  }
+
+  .service-contact-img img {
+      margin-left: 0;
+      width: 240px;
+      height: 240px;
+  }
+
+  .service-contact-content h1 {
+      font-size: 28px;
+      margin: 15px 0;
+      text-align: center;
+  }
+
+  .service-contact-content p {
+      font-size: 18px;
+      margin: 15px 0;
+  }
+
+  .service-contact-content button {
+      width: 100%;
+      max-width: 240px;
+      font-size: 20px;
+      margin-top: 40px;
+  }
+
+  .appbg-1,
+  .appbg-2 {
+      display: none;
+  }
+}
+
 
 @media (min-width:600px) and (max-width:768px)
 {
@@ -391,7 +871,7 @@ ul li {
 
 }
 }
-
+/* 
 @media (min-width:769px) and (max-width:1024px)
 {
   .box-1, .box-2, .box-3, .box-4, .box-5, .box-6
@@ -411,4 +891,336 @@ ul li {
   {
     display: none;
   }
+} */
+
+
+
+
+@media (min-width:600px) and (max-width:768px)
+{
+  .app_dev_hero_two img {
+    height: 300px;
+    margin-bottom: 18px;
+}
+.app_dev_hero_h1
+{
+  font-size: 25px;
+  font-weight: 600;
+}
+.app_dev_hero_one button {
+  width: 129px;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  /* padding: 20px; */
+}
+.app_properties
+{
+  font-size: 32px;
+}
+.app_webbg-1 {
+  height: 484px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  opacity: 1;
+
+}
+.app_webbg-2
+{
+  right: 10px;
+}
+.app_boxes1, .app_boxes2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-left:59px;
+  width: 80%;
+  gap:20px
+}
+.app_box_txt {
+  font-size: 14px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+  height: 230px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 0px 30px 0px 30px;
+  background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+  padding: 8px;
+}
+.boxes p {
+  color: white;
+  margin-top:2px;
+  font-size: 16px;
+  text-align: left;
+}
+.professional-box-one, .professional-box-two, .professional-box-three {
+  height: 433px;
+  width: 300px;
+  padding: 30px;
+  background: linear-gradient(to left, #00246b, #7fa3dc);
+  border-radius: 0px 30px 0px 30px;
+}
+.professional-content {
+  color: #ffffff;
+  margin-top: 8px;
+}
+.professional h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.service-contact-img img {
+  margin-left: 40px;
+  width: 234px;
+  height: 240px;
+}
+.service-contact-content
+{
+  padding: 0;
+}
+.service-contact-content h1 {
+  font-size: 25px;
+}
+
+.appbg-1, .appbg-2{
+  display: none;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app_dev_hero_two img {
+      height: 350px;
+      margin-bottom: 20px;
+  }
+
+  .app_dev_hero_h1 {
+      font-size: 28px;
+      font-weight: 700;
+  }
+
+  .app_dev_hero_one button {
+      width: 150px;
+      height: 50px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(to right, #003cb4, #00359f);
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+  }
+
+  .app_properties {
+      font-size: 34px;
+  }
+
+  .app_webbg-1 {
+      height: 500px;
+      width: 120px;
+      position: absolute;
+      top: 0;
+      left: -25px;
+      opacity: 1;
+  }
+
+  .app_webbg-2 {
+      right: 15px;
+  }
+
+  .app_boxes1, .app_boxes2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 25px;
+      margin-left: 40px;
+      width: 85%;
+      gap: 25px;
+  }
+
+  .app_box_txt {
+      font-size: 16px;
+      margin-top: -15px;
+      text-align: center;
+  }
+
+  .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+      height: 250px;
+      width: 220px;
+      background-color: #fff;
+      border-radius: 0px 35px 0px 35px;
+      background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+      padding: 10px;
+  }
+
+  .boxes p {
+      color: white;
+      margin-top: 5px;
+      font-size: 18px;
+      text-align: left;
+  }
+
+  .professional-box-one, .professional-box-two, .professional-box-three {
+      height: 450px;
+      width: 320px;
+      padding: 35px;
+      background: linear-gradient(to left, #00246b, #7fa3dc);
+      border-radius: 0px 35px 0px 35px;
+  }
+
+  .professional-content {
+      color: #ffffff;
+      margin-top: 10px;
+  }
+
+  .professional h2 {
+      color: #ffffff;
+      margin-bottom: 12px;
+      font-size: 26px;
+  }
+
+  .service-contact-img img {
+      margin-left: 50px;
+      width: 260px;
+      height: 260px;
+  }
+
+  .service-contact-content {
+      padding: 0;
+  }
+
+  .service-contact-content h1 {
+      font-size: 28px;
+  }
+
+  .appbg-1, .appbg-2 {
+      display: none;
+  }
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* .app_dev{
+    margin-top: 20px;
+  } */
+  .app_dev_hero_two img {
+    margin-top: 50px;
+      height: 400px;
+      /* margin-bottom: 25px; */
+  }
+
+  .app_dev_hero_h1 {
+      font-size: 32px;
+      font-weight: 700;
+  }
+
+  .app_dev_hero_one button {
+      width: 170px;
+      height: 55px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(to right, #003cb4, #00359f);
+      border: none;
+      border-radius: 18px;
+      cursor: pointer;
+  }
+
+  .app_properties {
+      font-size: 38px;
+  }
+
+  .app_webbg-1 {
+      height: 550px;
+      width: 140px;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      opacity: 1;
+  }
+
+  .app_webbg-2 {
+      right: 20px;
+  }
+
+  .app_boxes1, .app_boxes2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px;
+      margin-left: 50px;
+      width: 90%;
+      gap: 30px;
+  }
+
+  .app_box_txt {
+      font-size: 18px;
+      margin-top: -10px;
+      text-align: center;
+  }
+
+  .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+      height: 270px;
+      width: 250px;
+      background-color: #fff;
+      border-radius: 0px 40px 0px 40px;
+      background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+      padding: 12px;
+  }
+
+  .boxes p {
+      color: white;
+      margin-top: 5px;
+      font-size: 20px;
+      text-align: left;
+  }
+
+  .professional-box-one, .professional-box-two, .professional-box-three {
+      height: 480px;
+      width: 350px;
+      padding: 40px;
+      background: linear-gradient(to left, #00246b, #7fa3dc);
+      border-radius: 0px 40px 0px 40px;
+  }
+
+  .professional-content {
+      color: #ffffff;
+      margin-top: 12px;
+  }
+
+  .professional h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      font-size: 28px;
+  }
+
+  .service-contact-img img {
+      margin-left: 60px;
+      width: 280px;
+      height: 280px;
+  }
+
+  .service-contact-content {
+      padding: 10px;
+  }
+
+  .service-contact-content h1 {
+      font-size: 30px;
+  }
+
+  /* .appbg-1, .appbg-2 {
+      display: none;
+  } */
 }

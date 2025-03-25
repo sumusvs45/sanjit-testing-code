@@ -39,7 +39,7 @@ export default function Software() {
           variants={leftContentVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"} className="software-dev_hero_two">
-          <img src={app_icon}></img>
+          {/* <img src={app_icon}></img> */}
         </motion.div>
         <div className="software-dev_hero_one">
           <motion.h1 initial={{opacity:0,y:-20}} whileInView={{opacity:1,y:0}} transition={{duration:1.5 ,ease:'easeInOut'}} className="software-dev_hero_h1">

@@ -160,6 +160,445 @@ height:420px;
     line-height:26px;
 }
 
+/* ===============================================================
+                Responsiveness
+=================================================================*/
+/* ======================================
+   Global Responsive Styles (Max-width: 375px)
+========================================*/
+@media (max-width: 375px) {
+  
+    /* Hero Section */
+    .aboutus-Herosection {
+      max-width: 100%;
+      height: auto;
+      
+    }
+  
+    .aboutus-Hero {
+      width: 100%;
+      height: 60vh;
+      
+    }
+  
+    .aboutus {
+      position: relative;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .aboutus h1 {
+      position: static;
+      font-size: 28px;
+    }
+  
+    .heading_para {
+      position: static;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  
+    /* About Section */
+    .aboutus-content {
+      flex-direction: column;
+      width: 90%;
+      margin-top: 20px;
+      padding: 15px;
+    }
+  
+    .aboutus-content-matter {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .aboutus-content-matter h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  
+    .aboutus-content-matter p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .aboutus-content-img img {
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+    }
+  
+    /* Mission, Vision, Goals */
+    .aboutus-mission {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .aboutus-mission h1 {
+      font-size: 24px;
+    }
+  
+    .aboutus-boxes {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .aboutus-box {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .aboutus-box h2 {
+      font-size: 20px;
+    }
+  
+    .aboutus-box p {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    /* Latest Stories */
+    .aboutus-story-1 {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .aboutus-Stories {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutus-box1 {
+      width: 90%;
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .aboutus-box1 p,
+    .aboutus-box1 h3 {
+      font-size: 16px;
+    }
+  
+    /* Teamwork Section */
+    .aboutus-story {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .aboutus-ourstory {
+      flex-direction: column;
+      width: 90%;
+      text-align: center;
+    }
+  
+    .aboutus-ourstory-img img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  
+    .aboutus-ourstory-content p {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  
+
+  /* ======================================
+   Global Responsive Styles (Min-width: 376px - Max-width: 425px)
+========================================*/
+@media (min-width: 376px) and (max-width: 425px) {
+  
+    /* Hero Section */
+    .aboutus-Herosection {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .aboutus-Hero {
+      width: 100%;
+      height: 65vh;
+    }
+  
+    .aboutus {
+      position: relative;
+      text-align: center;
+      padding: 25px;
+    }
+  
+    .aboutus h1 {
+      display: none;
+    }
+  
+    .heading_para {
+        display: none;
+    }
+  
+    /* About Section */
+    .aboutus-content {
+      flex-direction: column;
+      width: 85%;
+      margin-top: 25px;
+      padding: 20px;
+    }
+  
+    .aboutus-content-matter {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .aboutus-content-matter h1 {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  
+    .aboutus-content-matter p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  
+    .aboutus-content-img img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    /* Mission, Vision, Goals */
+    .aboutus-mission {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .aboutus-mission h1 {
+      font-size: 26px;
+    }
+  
+    .aboutus-boxes {
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+  
+    .aboutus-box {
+      width: 85%;
+      max-width: 320px;
+      height: auto;
+      padding: 22px;
+    }
+  
+    .aboutus-box h2 {
+      font-size: 22px;
+    }
+  
+    .aboutus-box p {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    /* Latest Stories */
+    .aboutus-story-1 {
+      font-size: 26px;
+      text-align: center;
+      margin-top: 25px;
+    }
+  
+    .aboutus-Stories {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutus-box1 {
+      width: 85%;
+      padding: 18px;
+      text-align: center;
+    }
+  
+    .aboutus-box1 p,
+    .aboutus-box1 h3 {
+      font-size: 18px;
+    }
+  
+    /* Teamwork Section */
+    .aboutus-story {
+      font-size: 26px;
+      text-align: center;
+    }
+  
+    .aboutus-ourstory {
+      flex-direction: column;
+      width: 85%;
+      text-align: center;
+    }
+  
+    .aboutus-ourstory-img img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .aboutus-ourstory-content p {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+    }
+  }
+  
+/* ======================================
+   Global Responsive Styles (Min-width: 426px - Max-width: 599px)
+========================================*/
+@media (min-width: 426px) and (max-width: 599px) {
+  
+   /* Hero Section */
+.aboutus-Herosection {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+  }
+  
+  .aboutus-Hero {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the text horizontally */
+    justify-content: center;
+    text-align: center; /* Ensures text remains centered */
+    padding: 30px;
+    width: 100%;
+  }
+  
+  .aboutus h1 {
+    display: none;
+  }
+  
+  .heading_para {
+    display: none;
+  }
+    
+    /* About Section */
+    .aboutus-content {
+      flex-direction: column;
+      width: 80%;
+      margin-top: 30px;
+      padding: 25px;
+    }
+  
+    .aboutus-content-matter {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .aboutus-content-matter h1 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  
+    .aboutus-content-matter p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    .aboutus-content-img img {
+      width: 100%;
+      height: auto;
+      margin-top: 25px;
+    }
+  
+    /* Mission, Vision, Goals */
+    .aboutus-mission {
+      padding: 25px;
+      text-align: center;
+    }
+  
+    .aboutus-mission h1 {
+      font-size: 28px;
+    }
+  
+    .aboutus-boxes {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .aboutus-box {
+      width: 80%;
+      max-width: 350px;
+      height: auto;
+      padding: 24px;
+    }
+  
+    .aboutus-box h2 {
+      font-size: 24px;
+    }
+  
+    .aboutus-box p {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    /* Latest Stories */
+    .aboutus-story-1 {
+      font-size: 28px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  
+    .aboutus-Stories {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutus-box1 {
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .aboutus-box1 p,
+    .aboutus-box1 h3 {
+      font-size: 20px;
+    }
+  
+    /* Teamwork Section */
+    .aboutus-story {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .aboutus-ourstory {
+      flex-direction: column;
+      width: 80%;
+      text-align: center;
+    }
+  
+    .aboutus-ourstory-img img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 25px;
+    }
+  
+    .aboutus-ourstory-content p {
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+    }
+}
+
+
 @media (min-width:600px) and (max-width:768px)
 {
    .aboutus-Hero{
@@ -219,6 +658,10 @@ height:420px;
         font-size: 16px;
     }
 }
+
+
+
+
 @media (min-width:769px) and (max-width:1024px)
 {
     .aboutus h1
@@ -264,3 +707,5 @@ height:420px;
         font-size: 18px;
     }
 }
+
+

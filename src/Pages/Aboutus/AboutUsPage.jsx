@@ -62,7 +62,7 @@ const AboutUsPage = () => {
       <img className="aboutus-Hero" src={home} alt="Home" />
       <div className="aboutus">
         <h1>About Us</h1>
-        <p>We create digital solutions that drive success and growth.</p>
+        <p className="heading_para">We create digital solutions that drive success and growth.</p>
       </div>
 
       {/* About Section */}
@@ -76,9 +76,11 @@ const AboutUsPage = () => {
         >
           <h1>About Sanjit Tech</h1>
           <p>
-          Innovate, Grow & Succeed in the Digital World
-
-At Sanjit Tech Solutions, we build high-performance websites, mobile apps, SEO strategies, and AI-driven solutions to help businesses reach more customers and scale faster. Whether on mobile or desktop, our digital expertise keeps you ahead of the competition.
+            Innovate, Grow & Succeed in the Digital World At Sanjit Tech
+            Solutions, we build high-performance websites, mobile apps, SEO
+            strategies, and AI-driven solutions to help businesses reach more
+            customers and scale faster. Whether on mobile or desktop, our
+            digital expertise keeps you ahead of the competition.
           </p>
         </motion.div>
 

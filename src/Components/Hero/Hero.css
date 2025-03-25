@@ -92,13 +92,412 @@
     left: -40px;
     transform: rotate(180deg);
 }
-/* //Potrait landscape  */
+
+
+ 
+/* ======================================================
+                Reesonsiveness
+=======================================================*/
+ 
+@media screen and (max-width: 375px) {
+    .hero-section {
+        height: 50vh; /* Adjusted for smaller screens */
+        flex-direction: column; /* Stack elements vertically */
+        padding: 0 20px; /* Reduce side padding */
+        text-align: center;
+    }
+ 
+    .hero-heading {
+        width: 80%; /* Full width for better readability */
+        font-size: 28px; /* Reduce font size */
+        font-weight: 700; /* Adjust weight */
+        margin: 0 auto 40px auto; /* Center and reduce margin */
+        margin-top: 120px;
+    }
+ 
+    .sm-circle {
+        height: 50px;
+        width: 50px;
+        bottom: 20px;
+        left: -10px;
+    }
+ 
+    .md-circle {
+        height: 70px;
+        width: 70px;
+        bottom: 40px;
+        right: -10px;
+    }
+ 
+    .semi-circle {
+        width: 200px;
+        height: 100px; /* Make it a half-circle */
+        border-radius: 100px 100px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ 
+    .big-circle {
+        width: 220px;
+        height: 240px;
+        bottom: 0px;
+    }
+ 
+    .half-eclipse-ring {
+        width: 100px;
+        height: 100px;
+        border-width: 10px;
+        left: -50px;
+        top: 15px;
+    }
+ 
+    .md-eclipse {
+        height: 50px;
+        width: 50px;
+        top: 40px;
+        left: -20px;
+    }
+}
+ 
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .hero-section {
+        height: 65vh; /* Slightly taller for better spacing */
+        flex-direction: column;
+        padding: 0 30px; /* Increased side padding */
+        text-align: center;
+    }
+ 
+    .hero-heading {
+        width: 90%;
+        font-size: 22px;
+        font-weight: 800;
+        margin: 0 auto 50px auto;
+        margin-top: 150px;
+        margin-left: -20px;
+    }
+ 
+    .sm-circle {
+        height: 60px;
+        width: 60px;
+        bottom: 60px;
+        left: 20px;
+    }
+ 
+    .md-circle {
+        height: 90px;
+        width: 90px;
+        bottom: 50px;
+        right: 25px;
+    }
+ 
+    .semi-circle {
+        width: 250px;
+        height: 125px; /* Keep it proportional */
+        border-radius: 125px 125px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ 
+    .big-circle {
+        width: 270px;
+        height: 290px;
+        bottom: 0px;
+        /* right: -80px; */
+    }
+ 
+    .half-eclipse-ring {
+        width: 120px;
+        height: 120px;
+        border-width: 12px;
+        left: -60px;
+        top: 20px;
+    }
+ 
+    .md-eclipse {
+        height: 60px;
+        width: 60px;
+        top: 50px;
+        left: -25px;
+    }
+}
+ 
+/* ====================================================================
+            Responsiveness min-width of 425px & max-width of 599px
+======================================================================*/
+@media screen and (min-width: 425px) and (max-width: 599px) {
+    .hero-section {
+        height: 75vh; /* Increase height for larger screens */
+        flex-direction: column;
+        padding: 0 40px; /* Adjusted side padding */
+        text-align: center;
+    }
+ 
+    .hero-heading {
+        width: 85%; /* Optimize text width */
+        font-size: 36px; /* Slightly larger font */
+        font-weight: 800;
+        margin: 0 auto 50px auto;
+        margin-top: 130px;
+    }
+ 
+    .sm-circle {
+        height: 70px;
+        width: 70px;
+        bottom: 70px;
+        left: 30px;
+    }
+ 
+    .md-circle {
+        height: 100px;
+        width: 100px;
+        bottom: 60px;
+        right: 30px;
+    }
+ 
+    .semi-circle {
+        width: 280px;
+        height: 140px; /* Keep it proportional */
+        border-radius: 140px 140px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ 
+    .big-circle {
+        width: 300px;
+        height: 320px;
+        bottom: 0px;
+    }
+ 
+    .half-eclipse-ring {
+        width: 140px;
+        height: 140px;
+        border-width: 14px;
+        left: -70px;
+        top: 25px;
+    }
+ 
+    .md-eclipse {
+        height: 70px;
+        width: 70px;
+        top: 60px;
+        left: -30px;
+    }
+}
+ 
+ 
+/* ====================================================================
+            Responsiveness min-width of 600px & max-width of 768px
+======================================================================*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .hero-section {
+        height: 85vh; /* Increased height for better layout */
+        flex-direction: column;
+        padding: 0 50px; /* Adjusted side padding */
+        text-align: center;
+    }
+ 
+    .hero-heading {
+        width: 80%; /* Optimize text width */
+        font-size: 40px; /* Slightly larger font */
+        font-weight: 800;
+        margin: 0 auto 60px auto;
+        margin-top: 140px;
+    }
+ 
+    .sm-circle {
+        height: 80px;
+        width: 80px;
+        bottom: 80px;
+        left: 40px;
+    }
+ 
+    .md-circle {
+        height: 110px;
+        width: 110px;
+        bottom: 70px;
+        right: 40px;
+    }
+ 
+    .semi-circle {
+        width: 320px;
+        height: 160px; /* Keep it proportional */
+        border-radius: 160px 160px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ 
+    .big-circle {
+        width: 340px;
+        height: 360px;
+        bottom: 0px;
+    }
+ 
+    .half-eclipse-ring {
+        width: 160px;
+        height: 160px;
+        border-width: 16px;
+        left: -80px;
+        top: 30px;
+    }
+ 
+    .md-eclipse {
+        height: 80px;
+        width: 80px;
+        top: 70px;
+        left: -35px;
+    }
+}
+ 
+ 
+ 
+/* ====================================================================
+        Responsiveness min-width of 769px & max-width of 1024px
+======================================================================*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-section {
+        height: 90vh; /* More height for larger screens */
+        flex-direction: column;
+        padding: 0 60px; /* Increased side padding */
+        text-align: center;
+    }
+ 
+    .hero-heading {
+        width: 75%; /* Keep text within optimal width */
+        font-size: 44px; /* Slightly larger for bigger screens */
+        font-weight: 800;
+        margin: 0 auto 70px auto;
+        margin-top: 150px;
+    }
+ 
+    .sm-circle {
+        height: 90px;
+        width: 90px;
+        bottom: 90px;
+        left: 50px;
+    }
+ 
+    .md-circle {
+        height: 120px;
+        width: 120px;
+        bottom: 80px;
+        right: 130px;
+    }
+ 
+    .semi-circle {
+        width: 350px;
+        height: 175px; /* Keep proportions */
+        border-radius: 175px 175px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ 
+    .big-circle {
+        width: 380px;
+        height: 400px;
+        bottom: 0px;
+    }
+ 
+    .half-eclipse-ring {
+        width: 180px;
+        height: 180px;
+        border-width: 18px;
+        left: -90px;
+        top: 35px;
+    }
+ 
+    .md-eclipse {
+        height: 90px;
+        width: 90px;
+        top: 80px;
+        left: -40px;
+    }
+}
+ 
+/* ====================================================================
+        Responsiveness min-width of 1025px & max-width of 1440px
+======================================================================*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .hero-section {
+        height: 95vh; /* Adjusted for larger screens */
+        flex-direction: column;
+        padding: 0 80px; /* Increased side padding */
+        text-align: center;
+    }
+ 
+    .hero-heading {
+        width: 70%; /* Keep text width within an optimal range */
+        font-size: 48px; /* Larger font for better readability */
+        font-weight: 800;
+        margin: 0 auto 80px auto;
+        margin-top: 160px;
+    }
+ 
+    .sm-circle {
+        height: 100px;
+        width: 100px;
+        bottom: 100px;
+        left: 60px;
+    }
+ 
+    .md-circle {
+        height: 140px;
+        width: 140px;
+        bottom: 90px;
+        right: 150px;
+    }
+ 
+    .semi-circle {
+        width: 400px;
+        height: 200px; /* Keep proportions */
+        border-radius: 200px 200px 0 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ 
+    .big-circle {
+        width: 450px;
+        height: 470px;
+        bottom: 0px;
+    }
+ 
+    .half-eclipse-ring {
+        width: 200px;
+        height: 200px;
+        border-width: 20px;
+        left: -100px;
+        top: 40px;
+    }
+ 
+    .md-eclipse {
+        height: 100px;
+        width: 100px;
+        top: 90px;
+        left: -50px;
+    }
+}
+ 
+
+
+
+
 @media (min-width:428px) and (max-width:599px)
 {
 
 }
 
-/* //landscape */
+
 @media (min-width:600px) and (max-width:768px)
 {
     .hero-section

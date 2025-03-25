@@ -160,7 +160,7 @@
   font-size: 30px;
   padding: 10px;
   font-weight: 600;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 /* .box-icon p{
   padding: 10px;
@@ -301,6 +301,557 @@
   color: #333;
 }
 
+
+
+/* ========================================================================
+      Responsiveness max-width of 375px
+==========================================================================*/
+@media screen and (max-width: 375px) {
+  .software-dev_hero {
+    display: flex;
+    flex-direction: column; /* Stack elements for mobile */
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .software-dev_hero_h1 {
+    margin-top: 150px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 250px;
+    width: auto;
+  }
+
+  .software-dev_hero_one button {
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+   /* Software Why Box */
+   .software-why_box {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .software-sub-heading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .software-sub-text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .software-sevice {
+    font-size: 22px;
+  }
+
+  /* Adjust Boxes Layout */
+  .software-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .software-boxes1,
+  .software-boxes2 {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .software-properties {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 30px;
+    width: 30px;
+  }
+
+  .software-boxes p {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 22px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .software-professional h1 {
+    font-size: 24px;
+  }
+
+  /* Service Contact */
+  .software-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .software-service-contact-content {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .software-service-contact-img img {
+    margin-left: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .software-service-contact-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+
+/* ========================================================================
+      Responsiveness for min-width: 376px to max-width: 425px
+==========================================================================*/
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .software-dev_hero_h1 {
+    margin-top: 120px;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 280px;
+    width: auto;
+  }
+
+  .software-dev_hero_one button {
+    width: 100%;
+    max-width: 220px;
+    height: 48px;
+    font-size: 1rem;
+    border-radius: 12px;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 25px auto;
+    padding: 0 20px;
+  }
+
+  .software-sub-heading {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .software-sub-text {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .software-sevice {
+    font-size: 24px;
+  }
+
+  /* Adjust Boxes Layout */
+  .software-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .software-boxes1,
+  .software-boxes2 {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    padding: 18px;
+  }
+
+  .software-properties {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 32px;
+    width: 32px;
+  }
+
+  .software-boxes p {
+    font-size: 17px;
+    padding: 12px;
+    line-height: 24px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 92%;
+    height: auto;
+    padding: 22px;
+  }
+
+  .software-professional h1 {
+    font-size: 26px;
+  }
+
+  /* Service Contact */
+  .software-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .software-service-contact-content {
+    align-items: center;
+    padding: 12px;
+  }
+
+  .software-service-contact-img img {
+    margin-left: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 26px;
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  .software-service-contact-content p {
+    font-size: 17px;
+    margin: 12px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 18px;
+    margin-top: 35px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+/* ========================================================================
+      Responsiveness for min-width: 426px to max-width: 599px
+==========================================================================*/
+@media screen and (min-width: 426px) and (max-width: 599px) {
+  
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .software-dev_hero_h1 {
+    margin-top: 100px;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 25px;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 320px;
+    width: auto;
+  }
+
+  .software-dev_hero_one button {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 30px auto;
+    padding: 0 25px;
+  }
+
+  .software-sub-heading {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .software-sub-text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .software-sevice {
+    font-size: 26px;
+  }
+
+  /* Adjust Boxes Layout */
+  .software-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .software-boxes1,
+  .software-boxes2 {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .software-properties {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 34px;
+    width: 34px;
+  }
+
+  .software-boxes p {
+    font-size: 18px;
+    padding: 14px;
+    line-height: 26px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .software-professional h1 {
+    font-size: 28px;
+  }
+
+  /* Service Contact */
+  .software-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .software-service-contact-content {
+    align-items: center;
+    padding: 15px;
+  }
+
+  .software-service-contact-img img {
+    margin-left: 0;
+    width: 240px;
+    height: 240px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 28px;
+    margin: 14px 0;
+    text-align: center;
+  }
+
+  .software-service-contact-content p {
+    font-size: 18px;
+    margin: 14px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 100%;
+    max-width: 250px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+
 @media (min-width:600px) and (max-width:768px)
 {
   .software-dev_hero_two img {
@@ -412,36 +963,381 @@
 }
 .software-service-contact-content h1 {
   font-size: 25px;
-
 }
-}
-
-
-@media (min-width:769px) and (max-width:1024px)
-{
-  .software-boxes1, .software-boxes2
-  {
-    width:100%;
-    margin-left: 5px;
-  }
-  .software-webbg-1,.software-webbg-2
-  {
+.software-webbg-1,
+  .software-webbg-2 {
     display: none;
   }
-  .software-professional-content
-  {
-    margin-top:14px;
+}
+
+/* ========================================================================
+      Responsiveness for min-width: 769px to max-width: 1024px
+==========================================================================*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 70px 30px;
+    text-align: center;
+    gap: 40px;
   }
-  .software-professional h2
-  {
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .software-dev_hero_h1 {
+    margin-top: 90px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 320px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_one button {
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 30px auto;
+    padding: 0 30px;
+  }
+
+  .software-sub-heading {
     font-size: 22px;
-    line-height: 25px;
+    line-height: 24px;
   }
-  .software-professional-content ul li
-  {
-    line-height: 22px;
+
+  .software-sub-text {
+    font-size: 28px;
+    line-height: 30px;
   }
-  .software-service-contact{
-    padding: 0;
+
+  .software-sevice {
+    font-size: 26px;
   }
+
+  /* Adjust Boxes Layout */
+  .software-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .software-boxes1,
+  .software-boxes2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    width: 90%;
+    gap: 25px;
+    margin-left: 20px;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    height: 240px;
+    width: 210px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+    padding: 10px;
+  }
+
+  .software-boxes p {
+    color: white;
+    margin-top: 18px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 38px;
+    width: 38px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 320px;
+    height: 450px;
+    padding: 30px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+    color: #fff;
+  }
+
+  .software-professional h1 {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .software-professional h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+
+  .software-professional-content {
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .software-service-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .software-service-contact-content {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 28px;
+  }
+
+  .software-service-contact-content p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 190px;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 25px;
+  }
+
+  .software-service-contact-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-service-contact-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+
+/* ========================================================================
+      Responsiveness for min-width: 1025px to max-width: 1440px
+==========================================================================*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 80px 50px;
+    text-align: left;
+    gap: 50px;
+  }
+
+  .software-dev_hero_one {
+    width: 50%;
+  }
+
+  .software-dev_hero_h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 380px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_one button {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 40px auto;
+    padding: 0 50px;
+  }
+
+  .software-sub-heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .software-sub-text {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .software-sevice {
+    font-size: 28px;
+  }
+
+  
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 340px;
+    height: 480px;
+    padding: 35px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+    color: #fff;
+  }
+
+  .software-professional h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .software-professional h2 {
+    font-size: 21px;
+    margin-bottom: 14px;
+    color: #ffffff;
+  }
+
+  .software-professional-content {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 12px;
+  }
+
+  /* Service Contact Section */
+  .software-service-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .software-service-contact-content {
+    width: 50%;
+    padding: 25px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 32px;
+  }
+
+  .software-service-contact-content p {
+    font-size: 20px;
+    margin: 18px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 200px;
+    font-size: 20px;
+    padding: 14px;
+    margin-top: 30px;
+  }
+
+  .software-service-contact-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-service-contact-img img {
+    width: 280px;
+    height: 280px;
+  }  
 }

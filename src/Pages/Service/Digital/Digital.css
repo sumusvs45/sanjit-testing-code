@@ -302,6 +302,542 @@
 }
 
 
+/* =============================================================
+          Responsiveness
+================================================================*/
+@media screen and (max-width: 375px) {
+  /* Container */
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Hero Section */
+  .digital_dev_hero {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center;
+    height: auto;
+    gap: 20px;
+    padding: 40px 15px;
+  }
+
+  .digital_dev_hero_two img {
+    height: 250px;
+    width: auto;
+  }
+
+  .digital_dev_hero_one {
+    align-items: center;
+    text-align: center;
+  }
+
+  .digital_dev_hero_h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .digital_dev_hero_h1 span {
+    margin-left: 0;
+  }
+
+  .digital_dev_hero_one p {
+    font-size: 16px;
+  }
+
+  .digital_dev_hero_one button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+  }
+
+  /* Why Box */
+  .digital_why_box {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .digital_sub-heading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .digital_sub-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  /* Digital Boxes */
+  .digital-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .digital-boxes1,
+  .digital-boxes2 {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .digital-box-icon .digital-icon-code-block {
+    height: 30px;
+    width: 30px;
+  }
+
+  .digital-boxes p {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 22px;
+  }
+
+  /* Professional Section */
+  .digital-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .digital-professional h1 {
+    font-size: 24px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .digital-service-contact-content {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .digital-service-contact-img img {
+    margin-left: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .digital-service-contact-content h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .digital-service-contact-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .digital-service-contact-content button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  /* FAQ Section */
+  .digital-faq_container {
+    padding: 20px;
+  }
+
+  .digital-faq {
+    font-size: 16px;
+  }
+
+  /* Hide Background Images for Performance */
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  /* Container */
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Hero Section */
+  .digital_dev_hero {
+    grid-template-columns: 1fr; /* Single-column layout */
+    text-align: center;
+    height: auto;
+    gap: 25px;
+    padding: 50px 20px;
+  }
+
+  .digital_dev_hero_two img {
+    height: 280px;
+    width: auto;
+  }
+
+  .digital_dev_hero_one {
+    align-items: center;
+    text-align: center;
+  }
+
+  .digital_dev_hero_h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .digital_dev_hero_h1 span {
+    margin-left: 0;
+  }
+
+  .digital_dev_hero_one p {
+    font-size: 18px;
+  }
+
+  .digital_dev_hero_one button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 18px;
+  }
+
+  /* Why Box */
+  .digital_why_box {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .digital_sub-heading {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .digital_sub-text {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 22px;
+    padding: 12px;
+    margin-top: 25px;
+  }
+
+  /* Digital Boxes */
+  .digital-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .digital-boxes1,
+  .digital-boxes2 {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    padding: 18px;
+  }
+
+  .digital-box-icon .digital-icon-code-block {
+    height: 35px;
+    width: 35px;
+  }
+
+  .digital-boxes p {
+    font-size: 18px;
+    padding: 12px;
+    line-height: 24px;
+  }
+
+  /* Professional Section */
+  .digital-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .digital-professional h1 {
+    font-size: 26px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .digital-service-contact-content {
+    align-items: center;
+    padding: 12px;
+  }
+
+  .digital-service-contact-img img {
+    margin-left: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .digital-service-contact-content h1 {
+    font-size: 26px;
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  .digital-service-contact-content p {
+    font-size: 18px;
+    margin: 12px 0;
+  }
+
+  .digital-service-contact-content button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  /* FAQ Section */
+  .digital-faq_container {
+    padding: 25px;
+  }
+
+  .digital-faq {
+    font-size: 18px;
+  }
+
+  /* Hide Background Images for Performance */
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 599px) {
+  /* Container */
+  .container {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  /* Hero Section */
+  .digital_dev_hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    gap: 30px;
+    padding: 60px 25px;
+  }
+
+  .digital_dev_hero_two img {
+    height: 320px;
+    width: auto;
+  }
+
+  .digital_dev_hero_one {
+    align-items: center;
+    text-align: center;
+  }
+
+  .digital_dev_hero_h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .digital_dev_hero_h1 span {
+    margin-left: 0;
+  }
+
+  .digital_dev_hero_one p {
+    font-size: 20px;
+  }
+
+  .digital_dev_hero_one button {
+    width: 100%;
+    max-width: 240px;
+    font-size: 20px;
+  }
+
+  /* Why Box */
+  .digital_why_box {
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  .digital_sub-heading {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .digital_sub-text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 24px;
+    padding: 14px;
+    margin-top: 30px;
+  }
+
+  /* Digital Boxes */
+  .digital-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .digital-boxes1,
+  .digital-boxes2 {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    width: 100%;
+    max-width: 290px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .digital-box-icon .digital-icon-code-block {
+    height: 40px;
+    width: 40px;
+  }
+
+  .digital-boxes p {
+    font-size: 20px;
+    padding: 14px;
+    line-height: 26px;
+  }
+
+  /* Professional Section */
+  .digital-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    width: 85%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .digital-professional h1 {
+    font-size: 28px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .digital-service-contact-content {
+    align-items: center;
+    padding: 15px;
+  }
+
+  .digital-service-contact-img img {
+    margin-left: 0;
+    width: 240px;
+    height: 240px;
+  }
+
+  .digital-service-contact-content h1 {
+    font-size: 28px;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .digital-service-contact-content p {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .digital-service-contact-content button {
+    width: 100%;
+    max-width: 240px;
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
+  /* FAQ Section */
+  .digital-faq_container {
+    padding: 30px;
+  }
+
+  .digital-faq {
+    font-size: 20px;
+  }
+
+  /* Hide Background Images for Performance */
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: none;
+  }
+}
+
+
 @media (min-width:600px) and (max-width:768px)
 {
   .digital_dev_hero_two img {
@@ -344,6 +880,7 @@
 {
   right: 0px;
 }
+
 .digital-boxes1, .digital-boxes2 {
   display: flex;
   justify-content: space-around;
@@ -403,30 +940,131 @@
 
 }
 }
-@media (min-width:769px) and (max-width:1024px)
-{
-  .digital_dev_hero_h1 
-  {
-   font-size: 28px;
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Hero Section */
+  .digital_dev_hero_two img {
+    height: 350px;
+    margin-bottom: 20px;
   }
-  .digital_dev_hero_one p
-  {
+
+  .digital_dev_hero_h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .digital_dev_hero_one button {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 28px;
     line-height: 22px;
   }
-  .digital-boxes1, .digital-boxes2
-  {
-    width:100%;
-    margin-left: 5px;
+
+  /* Background Elements */
+  .digital-webbg-1 {
+    height: 500px;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    opacity: 1;
   }
-  .digital-webbg-1,.digital-webbg-2
-  {
-    display:none;
+
+  .digiytal-webbg-2 {
+    right: 0px;
   }
-  .digital-professional-content ul li {
-    line-height: 22px;
+
+  /* Digital Boxes */
+  .digital-boxes1,
+  .digital-boxes2 {
+    display: flex;    
+            justify-content: space-around;
+            align-items: center;
+            padding: 25px;
+            margin-left: 20px;
+            width: 100%;
+            /* gap: 25px; */
+  }
+
+  .digital-box_txt {
+    font-size: 16px;
+    margin-top: -15px;
+    text-align: center;
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    height: 250px;
+    width: 200px;
+    background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+    border-radius: 0px 30px 0px 30px;
+    padding: 10px;
+  }
+
+  .digital-boxes p {
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  /* Professional Section */
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    height: 460px;
+    width: 320px;
+    padding: 35px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+  }
+
+  .digital-professional-content {
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .digital-professional h2 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact-img img {
+    margin-left: 50px;
+    width: 260px;
+    height: 260px;
+  }
+
+  .digital-service-contact-content {
+    padding: 10px;
+  }
+
+  .digital-service-contact-content h1 {
+    font-size: 28px;
+  }
+
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: none;
+  }
 }
-.digital-service-contact
-  {
-    padding: 0;
-  }
-}
+

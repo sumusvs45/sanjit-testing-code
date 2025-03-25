@@ -65,33 +65,311 @@
      height: 50px;
      border-radius: 50%;
    }
-   @media (min-width:600px) and (max-width:768px)
-   {
-    .review-header
-    {
-      margin-left: 80px;
-    }
-    .reviews-container {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 20px;
-      overflow: hidden;
-     
-    }
-   }
 
-   @media (min-width:769px) and (max-width:1024px)
-   {
-    .review-header
-    {
-      margin-left:50px;
-    }
-    .reviews-container {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
+
+
+
+   /* ====================================================================
+        Responsiveness for max-width: 375px
+======================================================================*/
+@media screen and (max-width: 375px) {
+  .review-header {
+      flex-direction: column; /* Stack elements */
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+      gap: 10px;
+      margin-top: 30px;
+  }
+
+  .review-border {
+      width: 15%;
+      height: 6px;
+  }
+
+  .review-box {
+      margin-top: 30px;
+      /* padding: 20px; */
+  }
+
+  .testimonials {
+      text-align: center;
+      padding: 30px;
+      width: 100%;
+  }
+
+  .reviews-container {
+      display: flex;
+      flex-direction: column; /* Stack reviews */
+      gap: 15px;
+      align-items: center;
+  }
+
+  .review-card {
+      width: 90%; /* Make cards fit within the screen */
+      max-width: 280px;
+      padding: 10px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+  }
+
+  .review-image {
+      width: 40px;
+      height: 40px;
+  }
+
+  .h1 {
+      font-size: 20px;
+  }
+}
+
+
+
+/* ====================================================================
+        Responsiveness for min-width: 376px & max-width: 425px
+======================================================================*/
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .review-header {
+      flex-direction: column; /* Keep elements stacked */
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+      gap: 12px;
+      margin-top: 35px;
+  }
+
+  .review-border {
+      width: 12%;
+      height: 6px;
+  }
+
+  .review-box {
+      margin-top: 35px;
+      /* padding: 25px; */
+  }
+
+  .testimonials {
+      text-align: center;
+      padding: 35px;
+      width: 100%;
+  }
+
+  .reviews-container {
+      display: flex;
+      flex-direction: column; /* Stack reviews */
+      gap: 18px;
+      align-items: center;
+  }
+
+  .review-card {
+      width: 85%; /* Slightly wider cards */
+      max-width: 300px;
+      padding: 12px;
+      box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+
+  .review-image {
+      width: 45px;
+      height: 45px;
+  }
+
+  .h1 {
+      font-size: 22px;
+  }
+}
+
+
+/* ====================================================================
+        Responsiveness for min-width: 426px & max-width: 599px
+======================================================================*/
+@media screen and (min-width: 426px) and (max-width: 599px) {
+  .review-header {
+      flex-direction: column; /* Keep elements stacked */
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+      gap: 15px;
+      margin-top: 40px;
+  }
+
+  .review-border {
+      width: 10%;
+      height: 6px;
+  }
+
+  .review-box {
+      margin-top: 40px;
+      /* padding: 30px; */
+  }
+
+  .testimonials {
+      text-align: center;
+      padding: 40px;
+      width: 100%;
+  }
+
+  .reviews-container {
+      display: flex;
+      flex-direction: column; /* Stack reviews */
       gap: 20px;
-      margin-left: 40px;
-      overflow: hidden;
-     
-    }
-   }
+      align-items: center;
+  }
+
+  .review-card {
+      width: 100%; /* Wider cards for better readability */
+      max-width: 450px;
+      padding: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+  }
+
+  .review-image {
+      width: 50px;
+      height: 50px;
+  }
+
+  .h1 {
+      font-size: 24px;
+  }
+}
+
+
+/* ====================================================================
+        Responsiveness for min-width: 600px & max-width: 768px
+======================================================================*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .review-header {
+      flex-direction: row; /* Align elements in a row */
+      align-items: center;
+      text-align: left;
+      margin-left: 50px;
+      gap: 20px;
+      margin-top: 40px;
+  }
+
+  .review-border {
+      width: 8%;
+      height: 6px;
+  }
+
+  .review-box {
+      margin-top: 50px;
+      /* padding: 40px; */
+  }
+
+  .testimonials {
+      text-align: center;
+      padding: 50px;
+      width: 100%;
+  }
+
+  .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two reviews per row */
+      gap: 20px;
+      justify-content: center;
+  }
+
+  .review-card {
+      width: 100%;
+      max-width: 320px;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .review-content {
+      display: flex;
+      flex-direction: row; /* Align content in a row */
+      align-items: center;
+      gap: 15px;
+      text-align: left;
+  }
+
+  .review-image {
+      width: 60px;
+      height: 60px;
+  }
+
+  .h1 {
+      font-size: 26px;
+  }
+}
+
+
+/* ====================================================================
+        Responsiveness for min-width: 769px & max-width: 1024px
+======================================================================*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .review-header {
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+      margin-left: 100px;
+      gap: 25px;
+      margin-top: 50px;
+  }
+
+  .review-border {
+      width: 10%;
+      height: 6px;
+  }
+
+  .review-box {
+      margin-top: 50px;
+      /* padding: 50px; */
+  }
+
+  .testimonials {
+      text-align: center;
+      padding: 60px;
+      width: 100%;
+  }
+
+  .reviews-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three reviews per row */
+      gap: 25px;
+      justify-content: center;
+  }
+
+  .review-card {
+      width: 90%;
+      max-width: 250px;
+      padding: 15px;
+      box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .review-content {
+      display: flex;
+      flex-direction: row; /* Align content in a row */
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+  }
+
+  .review-image {
+      width: 70px;
+      height: 70px;
+  }
+
+  .h1 {
+      font-size: 28px;
+  }
+}
+
